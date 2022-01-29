@@ -79,7 +79,7 @@ section.vektor-il {
 section.main-content {
     display: grid;
     position: absolute;
-    z-index: -9;
+    z-index: -99;
     margin-top: 269px;
     width: 100%;
     height: 3405px;
@@ -156,7 +156,17 @@ section.main-content {
     height: 30px;
     right: 6px;
     top: 48px;
+}
 
+.vector2-il {
+     display: flex;
+     position: absolute;
+     width: 100%;
+     width: 455px;
+     height: 755.58px;
+     left: -30px;
+     top: 0px;
+     z-index: -9 ;
 }
 
 /* Form-donasi */

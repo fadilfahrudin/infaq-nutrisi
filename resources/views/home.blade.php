@@ -24,6 +24,8 @@
     {{-- Main Content --}}
     <section class="main-content">
 
+       
+
         {{-- Report --}}
         <div class="report">
 
@@ -56,6 +58,10 @@
             </a>
         </div>
         {{-- end Report --}}
+
+    <div class="vector2-il">
+         <img src="img/Vector-2.svg" alt="">
+     </div>
         
 
     </section>
