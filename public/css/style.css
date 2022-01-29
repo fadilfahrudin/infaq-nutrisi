@@ -99,6 +99,10 @@ section.main-content {
     justify-content: center;
 }
 
+.report a {
+    text-decoration: none;
+}
+
 .report .item-report {
     position: relative;
     display: grid;

@@ -24,39 +24,43 @@
     {{-- Main Content --}}
     <section class="main-content">
 
-
+        {{-- Report --}}
         <div class="report">
-            <div class="item-report">
+
+            <a href="#" class="item-report">
                 <div class="item1">Donasi Terhimpun</div>
                 <div class="item2">Rp.</div>
                 <div class="item3">100.000.000</div>  
                 <div class="item4"><img src="img/ic-donation-collage.svg" alt=""></div>
-            </div>
+             </a>
 
-            <div class="item-report">
+            <a href="#" class="item-report">
                 <div class="item1">Donasi Tersalurkan</div>
                 <div class="item2">Rp.</div>
                 <div class="item3">100.000.000</div>  
                 <div class="item4"><img src="img/ic-donation-distributed.svg" alt=""></div>
-            </div>
+            </a>
 
-            <div class="item-report">
+            <a href="#" class="item-report">
                 <div class="item1">Paket Tersalurkan</div>
                 <div class="item2">Rp.</div>
                 <div class="item3">100.000.000</div>  
                 <div class="item4"><img src="img/ic-package-distributed.svg" alt=""></div>
-            </div>
+            </a>
 
-            <div class="item-report">
+            <a href="#" class="item-report">
                 <div class="item1">Penerima Manfaat</div>
                 <div class="item2">Rp.</div>
                 <div class="item3">20.000</div>  
                 <div class="item4"><img src="img/ic-recipients.svg" alt=""></div>
-            </div>
+            </a>
         </div>
+        {{-- end Report --}}
         
 
     </section>
+
+    {{-- end main Content --}}
 
     
 
