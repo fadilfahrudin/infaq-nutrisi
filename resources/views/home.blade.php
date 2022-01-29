@@ -27,28 +27,31 @@
 
         <div class="report">
             <div class="item-report">
-                <p class="title-donate">Donasi Terhimpun</p>
-                <p class="text-rp">Rp.</p>
-                <h4 class="nominal">100.000.000</h4>
-                <img class="ic-report" src="img/ic-donation-collage.svg" alt="">
+                <div class="item1">Donasi Terhimpun</div>
+                <div class="item2">Rp.</div>
+                <div class="item3">100.000.000</div>  
+                <div class="item4"><img src="img/ic-donation-collage.svg" alt=""></div>
             </div>
+
             <div class="item-report">
-                <p class="title-donate">Donasi Terhimpun</p>
-                <p class="text-rp">Rp.</p>
-                <h4 class="nominal">189.000.000</h4>
-                <img class="ic-report" src="img/ic-donation-collage.svg" alt="">
+                <div class="item1">Donasi Tersalurkan</div>
+                <div class="item2">Rp.</div>
+                <div class="item3">100.000.000</div>  
+                <div class="item4"><img src="img/ic-donation-distributed.svg" alt=""></div>
             </div>
-              <div class="item-report">
-                <p class="title-donate">Donasi Terhimpun</p>
-                <p class="text-rp">Rp.</p>
-                <h4 class="nominal">189.000.000</h4>
-                <img class="ic-report" src="img/ic-donation-collage.svg" alt="">
+
+            <div class="item-report">
+                <div class="item1">Paket Tersalurkan</div>
+                <div class="item2">Rp.</div>
+                <div class="item3">100.000.000</div>  
+                <div class="item4"><img src="img/ic-package-distributed.svg" alt=""></div>
             </div>
-              <div class="item-report">
-                <p class="title-donate">Donasi Terhimpun</p>
-                <p class="text-rp">Rp.</p>
-                <h4 class="nominal">189.000.000</h4>
-                <img class="ic-report" src="img/ic-donation-collage.svg" alt="">
+
+            <div class="item-report">
+                <div class="item1">Penerima Manfaat</div>
+                <div class="item2">Rp.</div>
+                <div class="item3">20.000</div>  
+                <div class="item4"><img src="img/ic-recipients.svg" alt=""></div>
             </div>
         </div>
         
