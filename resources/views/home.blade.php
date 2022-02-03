@@ -1,5 +1,6 @@
 @extends('layouts.main')
 
+@include('partials.navbar')
 @section('content')
 <section class="main">
 {{-- Header Hero --}}

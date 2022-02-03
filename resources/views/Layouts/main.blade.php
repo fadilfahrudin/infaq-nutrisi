@@ -13,7 +13,6 @@
   </head>
   <body>
 
-  @include('partials.navbar')
 
   <div class="container-fluid">
     
