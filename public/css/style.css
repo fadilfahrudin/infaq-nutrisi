@@ -171,13 +171,18 @@ section.main-content {
 
 /* Form-donasi */
 
-.berdonasi .page-berdonasi {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100vh;
-    background: #CC59AA;
+.berdonasi {
+    background-color: #CC59AA;
     box-shadow: inset -300px 0px 250px rgba(175, 47, 137, 0.25);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.page-berdonasi {
+    width: 100%;
+    margin: 20px 0;
+
 }
 
 .form-nominal {
@@ -268,13 +273,11 @@ section.main-content {
 button.btn-lanjut-donate {
     background-color: #B551FF;
     height: 50px;
-    width: 300px;
     border-radius: 10px;
     font-size: 24px;
     font-weight: 400;
     color: #FFFDFF;
     border: none;
-    margin-left: 5px;
     /* box-shadow: 5px 5px 5px #9141CC; */
 }
 
@@ -283,4 +286,12 @@ button.btn-lanjut-donate {
     box-shadow: 10px 10px 10px #9141CC;
     background-color: #ECD5FD;
     color: #B551FF;
+}
+
+.btn-nominal {
+    width: 150px;
+    background: #F9ACE2;
+    border: 1px solid #9141CC;
+    box-sizing: border-box;
+    border-radius: 10px;
 }
