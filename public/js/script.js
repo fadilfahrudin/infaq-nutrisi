@@ -1,6 +1,6 @@
 /* Tanpa Rupiah */
 var tanpa_rupiah = document.getElementById("tanpa-rupiah");
-tanpa_rupiah.addEventListener("keyup", function (e) {
+tanpa_rupiah.addEventListener("keyup", function(e) {
     tanpa_rupiah.value = formatRupiah(this.value);
 });
 
