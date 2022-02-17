@@ -24,6 +24,6 @@ Route::get('/', function () {
 Route::get('/berdonasi', function () {
     return view('berdonasi', [
         "title" => "Donasi",
-        "image" => "Logo-Landscape.png"
+        "image" => "name-Landscape.png"
     ]);
 });
