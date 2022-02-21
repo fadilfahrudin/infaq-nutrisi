@@ -1,6 +1,6 @@
 <?php
 
-
+use App\Http\Controllers\FrontController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,14 +16,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home', [
-        "title" => "Home",
+        // "title" => "Home",
         "image" => "Logo-Landscape.png"
     ]);
 });
 
-Route::get('/berdonasi', function () {
-    return view('berdonasi', [
-        "title" => "Donasi",
-        "image" => "name-Landscape.png"
-    ]);
-});
+Route::get('/berdonasi', 'FrontController@donateForm');
