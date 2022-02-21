@@ -1,5 +1,9 @@
 @extends('layouts.main')
 
+@section('title')
+    HOME
+@endsection
+
 @include('partials.navbar') {{-- Navbar --}}
 @section('content')
     <section class="main mt-5">
