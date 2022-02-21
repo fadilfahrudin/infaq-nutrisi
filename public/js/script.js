@@ -5,7 +5,7 @@ tanpa_rupiah.addEventListener("keyup", function(e) {
 });
 
 /* Fungsi */
-function formatRupiah(angka, prefix) {
+function formatRupiah(angka) {
     var number_string = angka.replace(/[^,\d]/g, "").toString(),
         split = number_string.split(","),
         sisa = split[0].length % 3,
@@ -18,5 +18,5 @@ function formatRupiah(angka, prefix) {
     }
 
     rupiah = split[1] != undefined ? rupiah + "," + split[1] : rupiah;
-    return prefix == undefined ? rupiah : rupiah ? "Rp. " + rupiah : "";
+    return rupiah;
 }
