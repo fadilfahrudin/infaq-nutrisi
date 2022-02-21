@@ -1,15 +1,9 @@
 @extends('layouts.main')
-
+@section('title')
+    Berdonasi
+@endsection
 @section('berdonasi')
-    {{-- Navbar --}}
-    <nav class="navbar navbar-light bg-white fixed-top py-1">
-        <div class="container">
-            <a class="navbar-brand mx-auto" href="/">
-                <img src="img/{{ $image }}" alt="" width="120">
-            </a>
-        </div>
-    </nav>
-    {{-- end Navbar --}}
+    @include('partials.navbarPayment') {{-- Navbar --}}
     <section class="page-berdonasi">
 
         <div class="container mx-auto p-4">
@@ -23,10 +17,12 @@
 
                 <div class="mb-3">
                     <div class="row">
-                        <div class="col-sm-6 mb-3"><a type="button" class="btn btn-nominal" href="#">Rp. 50.000</a></div>
-                        <div class="col-sm-6 mb-3"><a type="button" class="btn btn-nominal" href="#">Rp. 50.000</a></div>
-                        <div class="col-sm-6 mb-3"><a type="button" class="btn btn-nominal" href="#">Rp. 50.000</a></div>
-                        <div class="col-sm-6 mb-3"><a type="button" class="btn btn-nominal" href="#">Rp. 50.000</a></div>
+                        @foreach ($nominal as $i => $n)
+                            <div class="col-sm-6 mb-3"><a type="button" class="btn btn-nominal"
+                                    data-nominal="{{ $n->nominal }}" href="#">Rp
+                                    {{ number_format($n->nominal, 0, ',', '.') }} </a>
+                            </div>
+                        @endforeach
                     </div>
                 </div>
 
@@ -35,8 +31,8 @@
 
                     <div class="input-group flex-nowrap">
                         <span class="input-group-text" id="addon-wrapping">Rp.</span>
-                        <input type="text" class="form-control" placeholder="0" aria-label="Username"
-                            aria-describedby="addon-wrapping" id="tanpa-rupiah">
+                        <input type="text" class="form-control text-end" name="amount" min="20000" placeholder="0"
+                            aria-label="Username" aria-describedby="addon-wrapping" id="tanpa-rupiah">
                     </div>
 
                     <p>Min. donasi sebesar Rp 10.000</p>
