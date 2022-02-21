@@ -12,7 +12,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
-    <title>INFAQ NUTRISI | {{ $title }}</title>
+    <title>INFAQ NUTRISI | @yield('title')</title>
 </head>
 
 <body>
