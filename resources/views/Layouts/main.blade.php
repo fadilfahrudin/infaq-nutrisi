@@ -28,6 +28,10 @@
             @yield('berdonasi')
         </div>
 
+        <div class="pembayaran">
+            @yield('pembayaran')
+        </div>
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
