@@ -5,10 +5,34 @@ html {
     margin: 0;
 }
 
+.form-payment {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px 5px 0px 0px;
+}
+
+.border-form-payment {
+    border: solid;
+    border-color: #9141CC;
+}
+
 .container-fluid {
     overflow: hidden;
     padding: 0;
     margin: 0;
+}
+
+.btn-facebook {
+    font-weight: 700;
+    background-color: #1976D2;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+.btn-whatsapp {
+    font-weight: 700;
+    background-color: #67D449;
+    color: white;
+    padding: 0.5rem 1rem;
 }
 
 .btn-sosmed {
@@ -23,6 +47,15 @@ html {
     font-weight: 700;
     background-color: blueviolet;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.btn-copy {
+    color: #9141CC;
+}
+
+.btn-copy:hover {
+    animation: pulse 1s;
+    box-shadow: 0 0 0 2em rgba(rgb(12, 12, 12), 0);
 }
 
 
@@ -263,6 +296,35 @@ footer {
 
 
 /* Berdonasi Page End */
+
+
+/* Page Pembayaran */
+
+.pembayaran .page-pembayaran {
+    background-color: #CC59AA;
+    box-shadow: inset -300px 0px 250px rgba(175, 47, 137, 0.25);
+    min-height: 100vh;
+}
+
+.page-pembayaran .container {
+    max-width: 540px;
+    margin-top: 80px;
+}
+
+.pembayaran p {
+    color: #797779;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.pembayaran h3 {
+    color: #3F3B3E;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+
+/* end pembayaran */
 
 
 /* Tokoh Pendukung dan Testimoni Penerima Manfaat */

@@ -22,3 +22,6 @@ Route::get('/', function () {
 });
 
 Route::get('/berdonasi', 'FrontController@donateForm');
+Route::get('/pembayaran', function () {
+    return view('pembayaran');
+});
