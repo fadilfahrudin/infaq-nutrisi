@@ -18,8 +18,7 @@
                 <div class="mb-3">
                     <div class="row">
                         @foreach ($nominal as $i => $n)
-                            <div class="col-sm-6 mb-3"><a type="button" class="btn btn-nominal"
-                                    data-nominal="{{ $n->nominal }}" href="#">Rp
+                            <div class="col-sm-6 mb-3"><a type="button" class="btn btn-nominal" href="#">Rp
                                     {{ number_format($n->nominal, 0, ',', '.') }} </a>
                             </div>
                         @endforeach

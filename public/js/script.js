@@ -20,3 +20,24 @@ function formatRupiah(angka) {
     rupiah = split[1] != undefined ? rupiah + "," + split[1] : rupiah;
     return rupiah;
 }
+
+// copy no Rekening Bank
+function copyToClipboard(element) {
+    var $temp = $("<input>");
+    $("body").append($temp);
+
+    $temp.val($(element).text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+}
+
+// copy nominal donasi
+function copyAmount() {
+    var str = document.getElementById('jmlTxt').value;
+    const el = document.createElement('textarea');
+    el.value = str;
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand('copy');
+    document.body.removeChild(el);
+}
