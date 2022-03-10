@@ -107,7 +107,7 @@
                             </div>
                         </div>
                         <div class="about-content col-12 col-md-6 text-center lh-lg px-3">
-                            <h3>Apa itu Gerakan Infaq Nutrisi?</h3>
+                            <h3>Apa itu GIN</h3>
                             <p>Gerakan Infaq Nutrisi (GIN) merupakan sebuah gerakan mengajak masyarakat untuk saling
                                 bergerak
                                 dan membantu sesama. GIN menyalurkan kebutuhan
