@@ -73,7 +73,7 @@
             <div class="container">
                 <div class="carousel py-5">
                     <div class="row gap-5">
-                        <div class="col-12 col-sm px-3">
+                        {{-- <div class="col-12 col-sm px-3">
                             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-indicators">
                                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -105,7 +105,7 @@
                                     <span class="visually-hidden">Next</span>
                                 </button>
                             </div>
-                        </div>
+                        </div> --}}
                         <div class="about-content col-12 col-md-6 text-center lh-lg px-3">
                             <h3>Apa itu Gerakan Infaq Nutrisi?</h3>
                             <p>Gerakan Infaq Nutrisi (GIN) merupakan sebuah gerakan mengajak masyarakat untuk saling
