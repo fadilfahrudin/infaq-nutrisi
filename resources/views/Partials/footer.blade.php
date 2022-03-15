@@ -1,37 +1,38 @@
-<footer class="footer py-5 px-5">
-    <div class="container">
-        <div class="card-footer overflow-hidden px-4 py-4" style="border-radius: 4vw">
-            <div class="row">
-                <div class="col col-md-6 m-auto">
-                    <h3>
-                        Semua Bisa Bergerak, Semua Bisa Berinfaq, Semua Mampu Bantu Sesama
-                    </h3>
-                    <p>
-                        Kunjungi Sosial Media <br> Kami di:
-                    </p>
+<footer class="container row row-cols-5 py-5">
+    <div class="col-md col-12 px-5">
+        <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+            <img src="/img/Logo-Landscape.png" width="100" alt="">
+        </a>
+        <p>Jl. Perkici No.25, Pd. Ranji, Kec. Ciputat Tim., Kota Tangerang Selatan, Banten 15412
+            www.gerakaninfaqnutrisi.com
+        </p>
+    </div>
 
-                    <a href="#" class="btn btn-sosmed mb-2" role="button">infaq nutrisi</a>
-                    <a href="#" class="btn btn-sosmed mb-2" role="button">Gerakan Tv</a>
-                </div>
+    <div class="col-md-1 col">
 
-                <div class="col col-md-6 d-flex">
-                    <img class="screen-ig" src="img/screen-ig.svg" alt="">
-                    <img class="screen-yt " src="img/screen-yt.svg" alt="">
-                </div>
-            </div>
-        </div>
+    </div>
 
-        <div class="d-block py-5">
-            <div class="row">
-                <div class="col">
-                    <h4 align="right">Alamat</h4>
-                    <p align="right">Bintaro Trade Center D 2 No 8 Bintaro<br>Sektor VII Kode Pos 15224</p>
-                </div>
-                <div class="col">
-                    <h4>Hubungi Kami</h4>
-                    <p><b>Email : </b>Sektor VII Kode Pos 15224</p>
-                </div>
-            </div>
-        </div>
+    <div class="col-md-2 col">
+        <h5>Tentang</h5>
+        <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tentang Kami</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Legal</a></li>
+        </ul>
+    </div>
+
+    <div class="col-md-2 col">
+        <h5>Kategori</h5>
+        <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Paket nutrisi</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Box Nutrisi</a></li>
+        </ul>
+    </div>
+
+    <div class="col-md-2 col">
+        <h5>Pusat Bantuan</h5>
+        <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQ</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Hubungi Kami</a></li>
+        </ul>
     </div>
 </footer>

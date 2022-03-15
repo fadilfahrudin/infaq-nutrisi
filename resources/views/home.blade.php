@@ -42,7 +42,7 @@
 
                     <div class="col-lg-3 col mb-3">
                         <a href="#" class="btn-report text-decoration-none">
-                            <div class="item1">Donasi Terhimpun</div>
+                            <div class="item1">Donasi Tersalurkan</div>
                             <div class="item2">Rp.</div>
                             <div class="item3">100.000.000</div>
                             <div class="item4"><img src="img/ic-donation-collage.svg" alt=""></div>
@@ -51,18 +51,16 @@
 
                     <div class="col-lg-3 col mb-3">
                         <a href="#" class="btn-report px-2 text-decoration-none">
-                            <div class="item1">Donasi Terhimpun</div>
-                            <div class="item2">Rp.</div>
-                            <div class="item3">1.000.000.000</div>
+                            <div class="item1">Paket Tersalurkan</div>
+                            <div class="item3">1.000.000</div>
                             <div class="item4"><img src="img/ic-donation-collage.svg" alt=""></div>
                         </a>
                     </div>
 
                     <div class="col-lg-3 col mb-3">
                         <a href="#" class="btn-report text-decoration-none">
-                            <div class="item1">Donasi Terhimpun</div>
-                            <div class="item2">Rp.</div>
-                            <div class="item3">100.000.000</div>
+                            <div class="item1">Penerima Mafaat</div>
+                            <div class="item3">1.000.000</div>
                             <div class="item4"><img src="img/ic-donation-collage.svg" alt=""></div>
                         </a>
                     </div>
@@ -71,70 +69,71 @@
             </div>
 
             <div class="container">
-                <div class="carousel py-5">
-                    <div class="row gap-5">
-                        <div class="col-12 col-sm px-3">
-                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-indicators">
-                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                                        aria-label="Slide 2"></button>
-                                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                                        aria-label="Slide 3"></button>
-                                </div>
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="img/1.jpg" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="img/2.jpg" class="d-block w-100" alt="...">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="img/3.jpg" class="d-block w-100" alt="...">
-                                    </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button"
-                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button"
-                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="about-content col-12 col-md-6 text-center lh-lg px-3">
-                            <h3>Apa itu GIN</h3>
-                            <p>Gerakan Infaq Nutrisi (GIN) merupakan sebuah gerakan mengajak masyarakat untuk saling
-                                bergerak
-                                dan membantu sesama. GIN menyalurkan kebutuhan
-                                pokok atau paket nutrisi yang sehat guna
-                                memperbaiki nutrisi keluarga.</p>
+                <div class="about-content col-10 m-auto lh-base text-center px-3">
+                    <h3>GERAKAN INFAQ NUTRISI</h3>
+                    <p>Gerakan Infaq Nutrisi merupakan sebuah gerakan sosial yang lahir dari semangat kepedulian untuk
+                        mengentaskan berbagai masalah pangan yang terjadi di Indonesia dan juga di dunia Islam, khususnya
+                        Palestina. Spirit kepedulian inilah yang mendorong Gerakan Infaq Nutrisi untuk terus bergerak demi
+                        memenuhi kebutuhan nutrisi para dhuafa, yatim piatu, santri, dan para penghafal Al-Qur’an.
+                    </p>
 
-                            <p> Paket nutrisi seperti beras, minyak goreng, gula, susu/madu herbal, sayuran, bumbu dapur,
-                                buah,
-                                telur/lauk, dan tempe/tahu. Paket nutrisi akan diberikan kepada keluarga dhuafa, panti
-                                asuhan,
-                                dan pesantren.</p>
+                    <p>Berdasarkan data Studi Status Gizi Balita Indonesia (SSGBI) tahun 2019, prevalensi stunting saat ini
+                        masih berada pada angka 27,7%. Data World Bank tahun 2020 menunjukkan, prevalensi stunting Indonesia
+                        berada pada urutan ke 115 dari 151 negara di dunia. Menko PMK memaparkan, pandemi Covid-19 telah
+                        memunculkan banyak keluarga miskin baru. Misalnya saja di perkotaan, berdasarkan data BPS, jumlah
+                        penduduk miskin di perkotaan telah naik sebanyak 138,1 ribu orang, dari 12,04 juta orang pada
+                        September 2020 menjadi 12,18 juta orang pada Maret 2021. (www.kemenkopmk.go.id)
+                    </p>
 
-                            <a href="/berdonasi" class="btn btn-donasi d-grid col-6 mx-auto">Donasi Sekarang</a>
-                        </div>
-                    </div>
+                    <p>
+                        Melalui Gerakan Infaq Nutrisi, mari kita tunjukkan rasa cinta, kasih sayang, kepedulian dan
+                        tindakkan nyata untuk mereka saudara-saudara kita, khusus nya yang masih berada di pelosok-pelosok
+                        Indonesia.
+
+                    </p>
+
+                    <a href="/berdonasi" class="btn btn-donasi d-grid col-6 mt-5 mx-auto">Donasi Sekarang</a>
                 </div>
             </div>
 
         </section>
         {{-- End About --}}
 
+        <section class="programs">
+            <div class="container py-5">
+                <div class="slides card-group m-auto gap-5">
+                    {{-- <div class="card">
+                        <img src="/img/dumy-program.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">BOX NUTRISI</h5>
+                            <small>Gerakan Infaq Nutrisi</small>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div> --}}
+
+
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         {{-- Start Tokoh Pendukung --}}
         <section class="tokoh-pendukung">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
-                        <div class="sec-heading text-center">
+                        <div class="sec-heading text-center py-3">
                             <h3>Tokoh Pendukung</h3>
                         </div>
                     </div>
@@ -203,7 +202,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
-                        <div class="sec-heading text-center">
+                        <div class="sec-heading py-3 text-center">
                             <h3>Penerima Manfaat</h3>
                         </div>
                     </div>
@@ -265,6 +264,10 @@
                 </div>
             </div>
         </section>
+        <a href="https://api.whatsapp.com/send?phone=+62081283125735&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202."
+            class="btn-whatsApp" target="_blank">
+            <i class="fa fa-whatsapp my-2"></i>
+        </a>
         {{-- End Penerima Manfaat --}}
 
         @include('partials.footer') {{-- Footer --}}
