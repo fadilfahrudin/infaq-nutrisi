@@ -71,7 +71,7 @@
                 </div>
 
                 <div class="d-grid">
-                    <button class="btn btn-donasi" type="button">Donasi Sekarang</button>
+                    <a href="/pembayaran" class="btn btn-donasi" type="button">Donasi Sekarang</a>
                 </div>
 
             </div>

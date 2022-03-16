@@ -21,6 +21,17 @@ html {
     margin: 0;
 }
 
+
+/* Scrolll Horizontal */
+
+.slides {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+
+/* End Scroll Horizontal */
+
 .btn-facebook {
     font-weight: 700;
     background-color: #1976D2;
@@ -44,9 +55,15 @@ html {
 
 .btn-donasi {
     color: aliceblue;
+    padding: 10px 5px;
     font-weight: 700;
     background-color: blueviolet;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.btn-donasi:hover {
+    color: blueviolet;
+    background-color: #ECD5FD;
 }
 
 .btn-copy {
@@ -121,22 +138,34 @@ html {
     background-color: white;
 }
 
+.laporan {
+    height: max-content;
+    padding: 50px 0;
+    background: #CC59AA;
+    box-shadow: inset -300px 0px 250px #AF2F89;
+}
+
 .about {
     height: max-content;
     background: #CC59AA;
     box-shadow: inset -300px 0px 250px #AF2F89;
 }
 
-.about-content h3 {
+.about h3 {
     color: #ECD5FD;
     font-size: 36px;
-    font-weight: 700;
 }
 
-.about-content p {
+.body-content p {
     color: #ECD5FD;
     font-size: 18px;
-    line-height: 24px;
+}
+
+.programs {
+    height: max-content;
+    background: #CC59AA;
+    box-shadow: inset -300px 0px 250px #AF2F89;
+    overflow: hidden;
 }
 
 .tokoh-pendukung {
@@ -330,10 +359,10 @@ footer {
 /* Tokoh Pendukung dan Testimoni Penerima Manfaat */
 
 .sec-heading h3 {
-    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Kanit', sans-serif;
     font-size: 3rem;
     color: #ECD5FD;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .single-box {
@@ -350,13 +379,15 @@ footer {
 .img-area {
     overflow: hidden;
     padding: 15px 0 15px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .img-area img {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 100%;
     margin: 0 auto;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    max-width: 230px
 }
 
 .single-box:hover img {
@@ -366,7 +397,8 @@ footer {
 
 .info-area i {
     display: inline-block;
-    color: #ffb400;
+    color: rgb(196, 15, 254);
+    color: linear-gradient(90deg, rgba(196, 15, 254, 1) 0%, rgba(249, 47, 250, 1) 35%, rgba(220, 28, 250, 1) 100%);
     margin: 0 4px;
 }
 
@@ -383,10 +415,8 @@ footer {
 .info-area a {
     display: inline-block;
     margin: 25px 0 0;
-    background-color: darkorange;
-    color: #fff;
-    padding: 10px 35px;
-    border-radius: 4px;
+    color: #9141CC;
+    text-decoration: none;
 }
 
 .team-slider .owl-dots {
@@ -432,6 +462,27 @@ footer {
 
 
 /* End tokoh Pendukung dan Testimoni Penerima Manfaat */
+
+
+/* WhatsApp CSS */
+
+.btn-whatsApp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+
+/* End */
 
 
 /* Media Query */

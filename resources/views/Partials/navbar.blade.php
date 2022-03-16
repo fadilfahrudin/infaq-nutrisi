@@ -8,13 +8,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Donasi</a>
+                    <a class="nav-link" href="#programs">Donasi</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Tentang Kamai</a>
+                    <a class="nav-link" href="#about">Tentang Kami</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Lamporan</a>
+                    <a class="nav-link" href="#laporan">Laporan</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Dokumentasi</a>
