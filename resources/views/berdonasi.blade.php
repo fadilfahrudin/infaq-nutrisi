@@ -1,9 +1,8 @@
-@extends('layouts.main')
+@extends('layouts.payment')
 @section('title')
     Berdonasi
 @endsection
 @section('berdonasi')
-    @include('partials.navbarPayment') {{-- Navbar --}}
     <section class="page-berdonasi">
 
         <div class="container mx-auto p-4">
