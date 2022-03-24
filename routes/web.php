@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home', [
         // "title" => "Home",
-        "image" => "Logo-Landscape.png"
+        "image" => "logo-gin.png"
     ]);
 });
 

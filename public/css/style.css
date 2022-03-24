@@ -94,9 +94,9 @@ html {
 }
 
 .btn-report .item1 {
-    grid-column-start: 1;
+    /* grid-column-start: 1;
     grid-column-end: 4;
-    top: 36px;
+    top: 36px; */
     color: #797779;
     font-size: 1em;
     font-weight: 400;
@@ -106,10 +106,6 @@ html {
     color: #3F3B3E;
     font-weight: 400;
     font-size: 18px;
-    width: 28px;
-    height: 1.2em;
-    top: 60px;
-    left: 6px;
 }
 
 .btn-report .item3 {
@@ -117,9 +113,6 @@ html {
     font-weight: 700;
     font-size: 1.5em;
     width: 150px;
-    height: 36px;
-    left: 43px;
-    top: 55px;
 }
 
 .btn-report .item4 {
