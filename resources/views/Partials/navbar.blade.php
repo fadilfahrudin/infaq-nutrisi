@@ -17,7 +17,7 @@
                     <a class="nav-link" href="#laporan">Laporan</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Dokumentasi</a>
+                    <a class="nav-link" href="/dokumentasi">Dokumentasi</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Jadi Relawan</a>

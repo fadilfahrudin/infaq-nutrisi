@@ -3,6 +3,7 @@
 @section('title')
     HOME
 @endsection
+
 @section('content')
     <section class="main mt-5">
         {{-- Header --}}
@@ -284,7 +285,6 @@
         </a>
         {{-- End WhatsApp Button --}}
 
-        @include('partials.footer') {{-- Footer --}}
     </section>
 
     {{-- end main Content --}}

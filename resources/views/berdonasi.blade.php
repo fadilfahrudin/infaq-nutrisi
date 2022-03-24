@@ -2,7 +2,7 @@
 @section('title')
     Berdonasi
 @endsection
-@section('berdonasi')
+@section('content')
     <section class="page-berdonasi">
 
         <div class="container mx-auto p-4">

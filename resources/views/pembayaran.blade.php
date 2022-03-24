@@ -2,7 +2,7 @@
 @section('title')
     Pembayaran
 @endsection
-@section('pembayaran')
+@section('content')
     <section class="page-pembayaran">
 
         <div class="container mx-auto p-4">

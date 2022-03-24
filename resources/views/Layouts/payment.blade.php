@@ -24,15 +24,11 @@
 
 <body>
     @include('partials.navbarPayment') {{-- Navbar --}}
-    <div class="container-fluid">
-        <div class="berdonasi">
-            @yield('berdonasi')
-        </div>
 
-        <div class="pembayaran">
-            @yield('pembayaran')
-        </div>
-    </div>
+
+    <div class="container-fluid">
+        @yield('content')
+    </div> {{-- Content --}}
 
 
 
