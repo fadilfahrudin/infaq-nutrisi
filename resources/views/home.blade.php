@@ -3,7 +3,6 @@
 @section('title')
     HOME
 @endsection
-
 @section('content')
     <section class="main mt-5">
         {{-- Header --}}
@@ -290,8 +289,8 @@
 
         {{-- WhatsApp Button --}}
         <a href="https://wa.me/6281283125735?text=Assalamu%27alaikum%20Warahmatullahi%20Wabarakatuh.."
-            class="btn-whatsApp" target="_blank">
-            <i class="fa fa-whatsapp my-2"></i>
+            class="btn-whatsApp p-2" target="_blank">
+            <i class="fa fa-whatsapp"></i>
         </a>
         {{-- End WhatsApp Button --}}
 
