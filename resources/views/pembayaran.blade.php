@@ -1,9 +1,8 @@
-@extends('layouts.main')
+@extends('layouts.payment')
 @section('title')
     Pembayaran
 @endsection
-@section('pembayaran')
-    @include('partials.navbarPayment') {{-- Navbar --}}
+@section('content')
     <section class="page-pembayaran">
 
         <div class="container mx-auto p-4">

@@ -17,11 +17,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home', [
         // "title" => "Home",
-        "image" => "Logo-Landscape.png"
+        "image" => "logo-gin.png"
     ]);
 });
 
 Route::get('/berdonasi', 'FrontController@donateForm');
 Route::get('/pembayaran', function () {
     return view('pembayaran');
+});
+Route::get('/dokumentasi', function() {
+    return view('dokumentasi');
 });

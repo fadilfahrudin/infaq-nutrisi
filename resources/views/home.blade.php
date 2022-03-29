@@ -4,7 +4,6 @@
     HOME
 @endsection
 
-@include('partials.navbar') {{-- Navbar --}}
 @section('content')
     <section class="main mt-5">
         {{-- Header --}}
@@ -12,7 +11,7 @@
             <header class="header d-flex py-4">
                 <div class="row align-items-center">
                     <div class="col col-lg-6">
-                        <img src="img/name-Landscape.png" class="w-100" alt="">
+                        <img src="img/logo-name.png" class="w-100" alt="">
                         <h3 class="text-center mb-5">Semua bisa bergerak, Semua bisa <br> berinfaq, Semua mampu bantu sesama
                         </h3>
                         <a href="/berdonasi" class="btn btn-donasi d-grid col-6 mx-auto">Donasi Sekarang</a>
@@ -35,37 +34,47 @@
                 <div class="row">
                     <div class="col-lg-3 col mb-3">
                         <a href="#" class="btn-report text-decoration-none">
-                            <div class="item1">Donasi Terhimpun</div>
-                            <div class="item2">Rp.</div>
-                            <div class="item3 me-auto">100.000.000</div>
-                            <div class="item4 ms-auto"><img src="img/ic-donation-collage.svg" alt=""></div>
+                            <div class="text-black-50">Donasi Terhimpun</div>
+                            <div class="d-flex">
+                                <span class="text-black-50">Rp.</span>
+                                <div class="fs-4 text-body fw-bold">100.000.000</div>
+                            </div>
+                            <div class="d-flex justify-content-end">
+                                <img src="img/ic-donation-collage.svg" alt="">
+                            </div>
                         </a>
                     </div>
 
                     <div class="col-lg-3 col mb-3">
                         <a href="#" class="btn-report text-decoration-none">
-                            <div class="item1">Donasi Tersalurkan</div>
-                            <div class="item2">Rp.</div>
-                            <div class="item3 me-auto">100.000.000</div>
-                            <div class="item4 ms-auto"><img src="img/ic-donation-collage.svg" alt=""></div>
-                        </a>
-                    </div>
-
-                    <div class="col-lg-3 col mb-3">
-                        <a href="#" class="btn-report px-2 text-decoration-none">
-                            <div class="item1">Paket Tersalurkan</div>
-
-                            <div class="item3 me-auto">1.000.000</div>
-                            <img class="item4 ms-auto" src="img/ic-donation-collage.svg" alt="">
-
+                            <div class="text-black-50">Donasi Tersalurkan</div>
+                            <div class="d-flex">
+                                <span class="text-black-50">Rp.</span>
+                                <div class="fs-4 text-body fw-bold">100.000.000</div>
+                            </div>
+                            <div class="d-flex justify-content-end">
+                                <img src="img/ic-donation-distributed.svg" alt="">
+                            </div>
                         </a>
                     </div>
 
                     <div class="col-lg-3 col mb-3">
                         <a href="#" class="btn-report text-decoration-none">
-                            <div class="item1">Penerima Mafaat</div>
-                            <div class="item3 me-auto">1.000.000</div>
-                            <div class="item4 ms-auto"><img src="img/ic-donation-collage.svg" alt=""></div>
+                            <div class="text-black-50">Paket Tersalurkan</div>
+                            <div class="fs-4 text-body fw-bold">1.000.000</div>
+                            <div class="d-flex justify-content-end">
+                                <div><img src="img/ic-package-distributed.svg" alt=""></div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col mb-3">
+                        <a href="#" class="btn-report text-decoration-none">
+                            <div class="text-black-50">Penerima Mafaat</div>
+                            <div class="fs-4 text-body fw-bold">1.000.000</div>
+                            <div class="d-flex justify-content-end">
+                                <div><img src="img/ic-recipients.svg" alt=""></div>
+                            </div>
                         </a>
                     </div>
 
@@ -286,7 +295,6 @@
         </a>
         {{-- End WhatsApp Button --}}
 
-        @include('partials.footer') {{-- Footer --}}
     </section>
 
     {{-- end main Content --}}

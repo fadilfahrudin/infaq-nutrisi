@@ -94,9 +94,9 @@ html {
 }
 
 .btn-report .item1 {
-    grid-column-start: 1;
+    /* grid-column-start: 1;
     grid-column-end: 4;
-    top: 36px;
+    top: 36px; */
     color: #797779;
     font-size: 1em;
     font-weight: 400;
@@ -106,10 +106,6 @@ html {
     color: #3F3B3E;
     font-weight: 400;
     font-size: 18px;
-    width: 28px;
-    height: 1.2em;
-    top: 60px;
-    left: 6px;
 }
 
 .btn-report .item3 {
@@ -117,9 +113,6 @@ html {
     font-weight: 700;
     font-size: 1.5em;
     width: 150px;
-    height: 36px;
-    left: 43px;
-    top: 55px;
 }
 
 .btn-report .item4 {
@@ -141,6 +134,13 @@ html {
 .laporan {
     height: max-content;
     padding: 50px 0;
+    background: #CC59AA;
+    box-shadow: inset -300px 0px 250px #AF2F89;
+}
+
+.page-dokumentasi {
+    margin-top: 70px;
+    min-height: 100vh;
     background: #CC59AA;
     box-shadow: inset -300px 0px 250px #AF2F89;
 }
@@ -215,7 +215,7 @@ footer {
 
 /* Form-donasi */
 
-.berdonasi .page-berdonasi {
+.page-berdonasi {
     background-color: #CC59AA;
     box-shadow: inset -300px 0px 250px rgba(175, 47, 137, 0.25);
     min-height: 100vh;
@@ -223,7 +223,7 @@ footer {
 
 .page-berdonasi .container {
     max-width: 540px;
-    margin-top: 80px;
+    margin-top: 70px;
 }
 
 .form-nominal {
@@ -329,7 +329,7 @@ footer {
 
 /* Page Pembayaran */
 
-.pembayaran .page-pembayaran {
+.page-pembayaran {
     background-color: #CC59AA;
     box-shadow: inset -300px 0px 250px rgba(175, 47, 137, 0.25);
     min-height: 100vh;
@@ -337,7 +337,7 @@ footer {
 
 .page-pembayaran .container {
     max-width: 540px;
-    margin-top: 80px;
+    margin-top: 70px;
 }
 
 .pembayaran p {
@@ -435,11 +435,11 @@ footer {
     margin: 0 6px;
     text-align: center;
     border-radius: 50%;
-    background-color: #262626;
+    background-color: #ac468d;
 }
 
 .team-slider .owl-dot.active {
-    background-color: coral;
+    background-color: #F9ACE2;
 }
 
 .move-animation {

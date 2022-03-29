@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 
-use App\PaymentNominal;
+use App\Models\PaymentNominal;
 use Illuminate\Http\Request;
 
 class FrontController extends Controller

@@ -1,7 +1,7 @@
 <footer class="container m-auto row row-cols-5 p-5">
     <div class="col-md col-12 me-3">
         <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-            <img src="/img/Logo-Landscape.png" width="100" alt="">
+            <img src="/img/logo-gin.png" width="100" alt="">
         </a>
         <p>Jl. Perkici No.25, Pd. Ranji, Kec. Ciputat Tim., Kota Tangerang Selatan, Banten 15412
             www.gerakaninfaqnutrisi.com
