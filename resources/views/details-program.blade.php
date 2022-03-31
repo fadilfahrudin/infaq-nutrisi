@@ -71,8 +71,8 @@
                         <div class="tab-content" id="detail-deskripsi">
                             <div class="tab-pane fade show active" id="deskripsi" role="tabpanel"
                                 aria-labelledby="deskripsi-tab">
-                                <div class="deskripsi-program p-3">
-                                    <p class="text-title">Assalamu'alaikum Wr.wb</p>
+                                <div class="navTab my-1 p-3">
+                                    <h5 class="fw-bold my-2">Assalamu'alaikum Wr.wb</h5>
                                     <p>Makan merupakan kebutuhan pokok kita sebagi manusia. Bukan sekedar menghapus rasa
                                         lapar tapi tentu perlu diperhatikan asupan nutrisi guna penuhi kebutuhan gizi untuk
                                         tubuh. Kesehatan yang pastinya akan berpengaruh dalam melakukan aktivitas termasuk
@@ -86,16 +86,19 @@
                                     </p>
                                     <p class="text-center"> <img src="img/dumy-program2.png" width="500" alt="program">
                                 </div>
-                                <div class="my-3 d-flex">
-                                    <button class="btn btn-donasi col mx-auto">Donasi Sekarang</button>
-                                </div>
+
                             </div>
                             <div class="tab-pane fade" id="fundriser" role="tabpanel" aria-labelledby="fundriser-tab">
-                                <div class="deskripsi-program p-5">
-                                    Fundriser Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore ducimus,
-                                    culpa, sed
-                                    animi, ipsam autem ipsa laborum rem voluptate ea commodi ut nihil necessitatibus aperiam
-                                    modi? Blanditiis molestias laudantium libero!
+                                <div class="navTab my-1 p-3">
+                                    <div class="d-flex align-items-center gap-2 mb-2">
+                                        <img class="avatar" src="/img/dumy-user.svg" alt="">
+                                        <div class="row d-flex mt-2">
+                                            <h5>Fadil <small class="fw-normal">Telah berhasil mengajak 1 orang
+                                                    berdonasi sebesar</small>
+                                            </h5>
+                                            <span class="nominal-color">Rp.10.000</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="berita" role="tabpanel" aria-labelledby="berita-tab">
@@ -104,6 +107,9 @@
                             <div class="tab-pane fade" id="donatur" role="tabpanel" aria-labelledby="donatur-tab">
                                 Hello World Donatur
                             </div>
+                        </div>
+                        <div class="my-3 d-flex">
+                            <button class="btn btn-donasi col mx-auto">Donasi Sekarang</button>
                         </div>
                     </nav>
                 </div>
