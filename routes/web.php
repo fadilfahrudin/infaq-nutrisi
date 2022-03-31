@@ -28,3 +28,6 @@ Route::get('/pembayaran', function () {
 Route::get('/dokumentasi', function() {
     return view('dokumentasi');
 });
+Route::get('/details-program', function(){
+    return view(('details-program'));
+});
