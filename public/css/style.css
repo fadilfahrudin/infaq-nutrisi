@@ -55,7 +55,7 @@ html {
 
 .btn-donasi {
     color: aliceblue;
-    padding: 10px 5px;
+    padding: 10px 15px;
     font-weight: 700;
     background-color: blueviolet;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -141,8 +141,7 @@ html {
 .page-programs {
     margin-top: 70px;
     min-height: 100vh;
-    background: #CC59AA;
-    box-shadow: inset -300px 0px 250px #AF2F89;
+    background: white;
 }
 
 .page-dokumentasi {
@@ -191,11 +190,6 @@ html {
 
 footer {
     max-height: max-content;
-    background-color: white;
-}
-
-.footer .container {
-    max-width: 710px;
     background-color: white;
 }
 
@@ -516,17 +510,78 @@ footer {
 /* End Avatar */
 
 
-/* deskripsi-program */
+/* Progress Report */
 
-.navTab {
-    background-color: white;
-    width: auto;
-    border: solid white;
-    overflow: hidden;
+.progress-report {
+    border-left: 1px solid rgb(196, 15, 254);
+    padding: 1rem;
+    margin-left: 50px;
+}
+
+.progress-report p {
+    font-size: 1rem;
+}
+
+.progress-report li {
+    list-style-type: none;
+    min-height: max-content;
+    position: relative;
+}
+
+.progress-report li::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid rgb(230, 178, 247);
+    display: inline-block;
+    background-color: rgb(196, 15, 254);
+    left: -25px;
+    box-shadow: 1px 2px 5px 1px rgb(0 0 0 / 30%)
+}
+
+.read-more-state {
+    display: none;
+}
+
+.read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+}
+
+.read-more-state:checked~.read-more-wrap .read-more-target {
+    opacity: 10;
+    font-size: inherit;
+    max-height: 999em;
+}
+
+.read-more-state~.read-more-trigger::before {
+    content: 'Selengkapnya..';
+}
+
+.read-more-state:checked~.read-more-trigger::before {
+    content: 'Lebih Sedikit';
+}
+
+.read-more-trigger {
+    cursor: pointer;
+    display: flex;
+    color: rgb(196, 15, 254);
+    font-size: 1rem;
+    justify-content: center;
+}
+
+.read-more-trigger:hover,
+.read-more-trigger:focus {
+    color: #5c0346;
+    transform: translateY(-0.25em);
 }
 
 
-/* end deskripsi-program */
+/* end Progress Report */
 
 
 /* Nominal Color */
