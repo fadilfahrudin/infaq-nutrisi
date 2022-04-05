@@ -113,7 +113,7 @@
                                                     <p class="text-mute">5 April 2022</p>
                                                 </div>
                                                 <div class="report-title text-wrap">
-                                                    <h5>Penyaluran Dana Tahap III Program Semangat Bantu Nutrisi</h5>
+                                                    <h5>Penyaluran Dana Tahap II Program Semangat Bantu Nutrisi</h5>
                                                     <a href="/landing-berita">Selengkapnya <i
                                                             class="fa-solid fa-angle-right"></i></a>
                                                 </div>
