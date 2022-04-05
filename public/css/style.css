@@ -141,7 +141,6 @@ html {
 .page-programs {
     margin-top: 70px;
     min-height: 100vh;
-    background: white;
 }
 
 .page-dokumentasi {
@@ -503,7 +502,6 @@ footer {
     vertical-align: middle;
     width: 50px;
     height: 50px;
-    /* border-radius: 50%; */
 }
 
 
@@ -512,23 +510,15 @@ footer {
 
 /* Progress Report */
 
-.progress-report {
-    border-left: 1px solid rgb(196, 15, 254);
-    padding: 1rem;
-    margin-left: 50px;
-}
-
-.progress-report p {
-    font-size: 1rem;
-}
-
-.progress-report li {
-    list-style-type: none;
-    min-height: max-content;
+.report-item {
     position: relative;
+    border-left: 1px solid rgb(196, 15, 254);
+    padding: 2rem;
+    margin-left: 50px;
+    background-color: white;
 }
 
-.progress-report li::before {
+.report-icon::before {
     content: '';
     position: absolute;
     width: 20px;
@@ -537,51 +527,36 @@ footer {
     border: 1px solid rgb(230, 178, 247);
     display: inline-block;
     background-color: rgb(196, 15, 254);
-    left: -25px;
+    left: -11px;
     box-shadow: 1px 2px 5px 1px rgb(0 0 0 / 30%)
 }
 
-.read-more-state {
-    display: none;
+.report-title {
+    border: solid 1px;
+    border-radius: 2px;
+    background-color: rgb(230, 178, 247);
+    padding: 1rem;
+    width: 90%;
 }
 
-.read-more-target {
-    opacity: 0;
-    max-height: 0;
-    font-size: 0;
-    transition: .25s ease;
-}
-
-.read-more-state:checked~.read-more-wrap .read-more-target {
-    opacity: 10;
-    font-size: inherit;
-    max-height: 999em;
-}
-
-.read-more-state~.read-more-trigger::before {
-    content: 'Selengkapnya..';
-}
-
-.read-more-state:checked~.read-more-trigger::before {
-    content: 'Lebih Sedikit';
-}
-
-.read-more-trigger {
-    cursor: pointer;
-    display: flex;
-    color: rgb(196, 15, 254);
-    font-size: 1rem;
-    justify-content: center;
-}
-
-.read-more-trigger:hover,
-.read-more-trigger:focus {
-    color: #5c0346;
-    transform: translateY(-0.25em);
+.report-item a {
+    color: #B551FF;
+    text-decoration: none;
 }
 
 
 /* end Progress Report */
+
+
+/* Landing Berita */
+
+.landing-berita {
+    margin-top: 70px;
+    min-height: 100vh;
+}
+
+
+/* End Landing Berita */
 
 
 /* Nominal Color */

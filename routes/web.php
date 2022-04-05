@@ -31,3 +31,6 @@ Route::get('/dokumentasi', function() {
 Route::get('/details-program', function(){
     return view(('details-program'));
 });
+Route::get('/landing-berita', function(){
+    return view(('landingberita'));
+});
