@@ -8,7 +8,7 @@
         <div class="container">
 
             {{-- Header donasi --}}
-            <div class="card bg-white p-3">
+            <div class="card bg-white p-1">
                 <div class="row">
                     <div class="col-lg-7">
                         <img src="img/dumy-program.png" class="img-fluid rounded-start" alt="...">
@@ -48,7 +48,7 @@
                 {{-- End Header Donasi --}}
 
                 {{-- Deskripsi Program --}}
-                <div class="card-body">
+                <div class="card-body px-1">
                     <div class="row">
                         <div class="col">
                             <nav>
@@ -121,10 +121,20 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="nav-donatur" role="tabpanel"
+                                <div class="tab-pane p-3 fade" id="nav-donatur" role="tabpanel"
                                     aria-labelledby="nav-donatur-tab">
-                                    <div class="p-3">
-                                        Donatur
+                                    <div class="donatur">
+                                        <div class="d-flex gap-3">
+                                            <img class="avatar" src="/img/dumy-user.svg" alt="">
+                                            <div class="row">
+                                                <h5>Fadil Fahrudin</h5>
+                                                <h5 class="nominal-color float-end">Rp.10.000.000</h5>
+                                                <p class="text-muted">"Bismillah. semoga berkah Lorem ipsum dolor sit
+                                                    amet consectetur adipisicing elit. Accusantium, aspernatur. "</p>
+                                                <span class="text-muted">11 April 2022</span>
+                                            </div>
+                                        </div>
+                                        <hr>
                                     </div>
                                 </div>
                             </div>
