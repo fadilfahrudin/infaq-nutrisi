@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title','Beranda')
+@section('title', 'Beranda')
 @section('content')
     <section class="main mt-5">
         {{-- Header --}}
@@ -131,7 +131,7 @@
                     <div class="slides d-flex gap-5">
                         <div class="col">
                             <div class="card ms-auto  bg-white" style="width: 25rem">
-                                <a class="text-decoration-none text-reset" href="#">
+                                <a class="text-decoration-none text-reset" href="/details-program">
                                     <img src="/img/dumy-program.png" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title text-left">PAKET BOX NUTRISI</h5>
@@ -154,7 +154,7 @@
                         </div>
                         <div class="col">
                             <div class="card me-auto bg-white" style="width: 25rem">
-                                <a class="text-decoration-none text-reset" href="#">
+                                <a class="text-decoration-none text-reset" href="/details-program">
                                     <img src="/img/dumy-program.png" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title text-left">PAKET NUTRISI</h5>
@@ -298,32 +298,32 @@
 @endsection
 
 @section('js')
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script>
-    $('.team-slider').owlCarousel({
-        loop: true,
-        nav: false,
-        autoplay: true,
-        autoplayTimeout: 5000,
-        smartSpeed: 450,
-        margin: 20,
-        responsive: {
-            0: {
-                items: 1
-            },
-            768: {
-                items: 2
-            },
-            991: {
-                items: 3
-            },
-            1200: {
-                items: 3
-            },
-            1920: {
-                items: 3
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $('.team-slider').owlCarousel({
+            loop: true,
+            nav: false,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            smartSpeed: 450,
+            margin: 20,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                991: {
+                    items: 3
+                },
+                1200: {
+                    items: 3
+                },
+                1920: {
+                    items: 3
+                }
             }
-        }
-    });
-</script>
+        });
+    </script>
 @endsection
