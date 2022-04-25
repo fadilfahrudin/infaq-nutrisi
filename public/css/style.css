@@ -26,7 +26,8 @@ html {
 
 .slides {
     overflow: auto;
-    white-space: nowrap;
+    white-space: normal;
+    /* background-color: #1976D2; */
 }
 
 

@@ -1,6 +1,6 @@
 @extends('layouts.payment')
 @section('title')
-    Nama Program
+    {{ $program->name }}
 @endsection
 
 @section('content')
@@ -11,12 +11,12 @@
             <div class="card bg-white p-1">
                 <div class="row">
                     <div class="col-lg-7">
-                        <img src="img/dumy-program.png" class="img-fluid rounded-start" alt="...">
+                        <img src="{{ $program->photo }}" class="img-fluid rounded-start" alt="...">
                     </div>
                     <div class="col-lg mb-3">
                         <div class="card-body bg-white">
-                            <h1 class="card-title">Paket Box Nutrisi Bantu Rakyat</h1>
-                            <h4 class="text-black-50 mb-3">100.000 paket sembako bantu rakyat</h4>
+                            <h1 class="card-title">{{ $program->name }}</h1>
+                            <h4 class="text-black-50 mb-3">{{ $program->pitch }}</h4>
 
                             <div class="d-flex gap-2 mb-2">
                                 <img class="avatar" src="/img/campigner-avatar.svg" alt="">
@@ -26,18 +26,32 @@
                                 </div>
                             </div>
 
+                            <div class="row">
+                                <div class="fs-6">Terkumpul</div>
+                            </div>
+                            <div class="row">
+                                <div class="d-flex gap-1">
+                                    <h5 class="nominal-color">Rp. {{ number_format($program->collected, 0, '.', '.') }}
+                                    </h5>
+                                    <p class="fs-6">dari Rp.
+                                        {{ number_format($program->target_amount, 0, '.', '.') }}
+                                    </p>
+                                </div>
+                            </div>
+
                             <div class="progress mb-2" style="height: 5px">
-                                <div class="progress-bar" role="progressbar" style="width: 14%; height: 5px;"
-                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar" role="progressbar"
+                                    style="width:{{ $persen_terkumpul }}%; height: 5px;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
 
                             <div class="d-flex justify-content-between">
-                                <div class="fs-6">Terkumpul</div>
+                                <div class="fs-6">Donatur</div>
                                 <div class="fs-6">Sisa Hari</div>
                             </div>
                             <div class="d-flex justify-content-between">
-                                <div class="fs-6">Rp. 100.0000</div>
-                                <div class="fs-6">32 Hari</div>
+                                <div class="fs-6">{{ $penyumbang }}</div>
+                                <div class="fs-6">{!! $sisa_hari !!}</div>
                             </div>
                             <div class="py-3">
                                 <a href="/berdonasi" class="btn btn-donasi d-grid col mx-auto">Donasi Sekarang</a>
@@ -72,28 +86,14 @@
                                 <div class="tab-pane fade show active" id="nav-deskripsi" role="tabpanel"
                                     aria-labelledby="nav-deskripsi-tab">
                                     <div class="p-3">
-                                        <h5 class="fw-bold">Assalamu'alaikum Wr.wb</h5>
-                                        <p>Makan merupakan kebutuhan pokok kita sebagi manusia. Bukan sekedar menghapus rasa
-                                            lapar tapi tentu perlu diperhatikan asupan nutrisi guna penuhi kebutuhan gizi
-                                            untuk
-                                            tubuh. Kesehatan yang pastinya akan berpengaruh dalam melakukan aktivitas
-                                            termasuk
-                                            agar bisa beribadah dengan maksimal juga.</p>
-
-                                        <p> Gerakan Infaq Nutrisi mengajak untuk bersama-sama kita satukan kepedulian bantu
-                                            saudara yang sedang kesulitan dalam penuhi kebutuhan nutrisi mereka. Kita bantu
-                                            adik-adik yatim, lansia, pejuang nafkah, dan dhuafa dengan berbagi paket nutrisi
-                                            senilai Rp. 200.000,-/paket. Dan ada juga box nutrisi untuk support para santri
-                                            penghafal Al Qur'an yang disalurkan senilai Rp. 1.500.000,-/box.</p>
-                                        </p>
-                                        <p class="text-center"> <img src="img/dumy-program2.png"
-                                                class="img-fluid rounded-start" alt="program">
+                                        {{ $program->description }}
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="nav-fundriser" role="tabpanel"
                                     aria-labelledby="nav-fundriser-tab">
                                     <div class="p-3">
                                         <div class="d-flex align-items-center gap-2 mb-2">
+
                                             <img class="avatar" src="/img/dumy-user.svg" alt="">
                                             <div class="row d-flex mt-2">
                                                 <h5>Fadil <small class="fw-normal">Telah berhasil mengajak 1 orang
@@ -129,7 +129,8 @@
                                             <div class="row">
                                                 <h5>Fadil Fahrudin</h5>
                                                 <h5 class="nominal-color float-end">Rp.10.000.000</h5>
-                                                <p class="text-muted">"Bismillah. semoga berkah Lorem ipsum dolor sit
+                                                <p class="text-muted">"Bismillah. semoga berkah Lorem ipsum dolor
+                                                    sit
                                                     amet consectetur adipisicing elit. Accusantium, aspernatur. "</p>
                                                 <span class="text-muted">11 April 2022</span>
                                             </div>

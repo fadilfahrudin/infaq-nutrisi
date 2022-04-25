@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Beranda')
+@section('title', 'Infaq Nutrisi')
 @section('content')
     <section class="main mt-5">
         {{-- Header --}}
@@ -34,7 +34,7 @@
                             <div class="text-black-50">Donasi Terhimpun</div>
                             <div class="d-flex">
                                 <span class="text-black-50">Rp.</span>
-                                <div class="fs-4 text-body fw-bold">100.000.000</div>
+                                <div class="fs-4 text-body fw-bold">{{ number_format($collected, 0, ',', '.') }}</div>
                             </div>
                             <div class="d-flex justify-content-end">
                                 <img src="img/ic-donation-collage.svg" alt="">
@@ -47,7 +47,8 @@
                             <div class="text-black-50">Donasi Tersalurkan</div>
                             <div class="d-flex">
                                 <span class="text-black-50">Rp.</span>
-                                <div class="fs-4 text-body fw-bold">100.000.000</div>
+                                <div class="fs-4 text-body fw-bold">{{ number_format($disalurkan, 0, '.', '.') }}
+                                </div>
                             </div>
                             <div class="d-flex justify-content-end">
                                 <img src="img/ic-donation-distributed.svg" alt="">
@@ -129,56 +130,51 @@
                 </div>
                 <div class="row gap-3">
                     <div class="slides d-flex gap-5">
-                        <div class="col">
-                            <div class="card ms-auto  bg-white" style="width: 25rem">
-                                <a class="text-decoration-none text-reset" href="/details-program">
-                                    <img src="/img/dumy-program.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title text-left">PAKET BOX NUTRISI</h5>
-                                        <small class="card-text text-left">Gerakan Infaq Nutrisi</small>
-                                        <div class="progress" style="height: 5px">
-                                            <div class="progress-bar" role="progressbar" style="width: 14%; height: 5px;"
-                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        @foreach ($programs as $program)
+                            {{-- @if (!empty($c->placment) && strpos($c->placment, 'pilihan') !== false) --}}
+                            @php
+                                $sisa_hari = '&infin;';
+                                if (!empty($program->expired_date)) {
+                                    $now = time();
+                                    $exp_date = strtotime($program->expired_date);
+                                    $datediff = $exp_date - $now;
+                                    $selisih = round($datediff / (60 * 60 * 24));
+                                    $sisa_hari = $selisih . ' hari';
+                                }
+                                $newlink = !empty($program->seo_link) ? $program->seo_link : '/p' . $programs->link;
+                                $terkumpul = !empty($program->additional_collected) ? $program->collected + $program->additional_collected : $program->collected;
+                                $persen_terkumpul = !empty($program->target_amount) && $program->target_amount > 0 ? ($terkumpul / $program->target_amount) * 100 : 0;
+                                $persen_terkumpul = round($persen_terkumpul, 2);
+                            @endphp
+                            <div class="col">
+                                <div class="card ms-auto  bg-white" style="width: 25rem">
+                                    <a href="{{ url($newlink) }}" class="text-decoration-none text-reset">
+                                        <img src="{{ $program->photo }}" class="card-img-top" alt="...">
+                                        <div class="card-body overflow-hidden">
+                                            <h5 class="card-title text-left">{{ $program->name }}</h5>
+                                            <small class="card-text text-left">Gerakan Infaq Nutrisi</small>
+                                            <div class="progress" style="height: 5px">
+                                                <div class="progress-bar" role="progressbar"
+                                                    style="width: {{ $persen_terkumpul }}%; height: 5px;"
+                                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="fs-6">Terkumpul</div>
+                                                <div class="fs-6">Sisa Hari</div>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="fs-6">
+                                                    Rp.{{ number_format($program->collected, 0, '.', '.') }}</div>
+                                                <div class="fs-6">{!! $sisa_hari !!}</div>
+                                            </div>
                                         </div>
-                                        <div class="d-flex justify-content-between">
-                                            <div class="fs-6">Terkumpul</div>
-                                            <div class="fs-6">Sisa Hari</div>
-                                        </div>
-                                        <div class="d-flex justify-content-between">
-                                            <div class="fs-6">Rp. 100.0000</div>
-                                            <div class="fs-6">32 Hari</div>
-                                        </div>
-                                    </div>
-                                </a>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col">
-                            <div class="card me-auto bg-white" style="width: 25rem">
-                                <a class="text-decoration-none text-reset" href="/details-program">
-                                    <img src="/img/dumy-program.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title text-left">PAKET NUTRISI</h5>
-                                        <small class="card-text text-left">Gerakan Infaq Nutrisi</small>
-                                        <div class="progress" style="height: 5px">
-                                            <div class="progress-bar" role="progressbar" style="width: 14%; height: 5px;"
-                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-
-                                        <div class="d-flex justify-content-between">
-                                            <div class="text-xs">Terkumpul</div>
-                                            <div class="text-xs">Sisa Hari</div>
-                                        </div>
-                                        <div class="d-flex justify-content-between">
-                                            <div class="text-xs">Rp. 100.0000</div>
-                                            <div class="text-xs">32 Hari</div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                            {{-- @endif --}}
+                        @endforeach
                     </div>
                 </div>
-            </div>
         </section>
 
         {{-- End Program Sliders --}}
