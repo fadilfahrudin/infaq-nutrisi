@@ -20,6 +20,7 @@ Route::get('/berdonasi', 'DonationController@create');
 Route::get('/pembayaran', function () {
     return view('pembayaran');
 });
+Route::get('/page-program', 'ProgramsController@pageProgram');
 Route::get('/dokumentasi', function() {
     return view('dokumentasi');
 });
