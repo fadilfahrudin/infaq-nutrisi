@@ -118,8 +118,7 @@
     /* END REPORT CONTENT */
     
     .header {
-        min-height: 100vh;
-        /* width: 100vmax; */
+        min-height: 50vh;
         background-color: white;
     }
     
@@ -593,8 +592,7 @@
         .hero {
             display: block;
         }
-        /* .screen-ig, */
-        .screen-yt {
-            display: block;
+        .header {
+            min-height: 100vh;
         }
     }

@@ -14,23 +14,21 @@
                         <a href="/page-program" class="btn btn-donasi d-grid col-6 mx-auto">Donasi Sekarang</a>
                     </div>
                     <div class="col-lg-6">
-
                         <img src="img/hero.png" class="hero w-100" alt="Gerakan Infaq nutrisi">
                     </div>
 
                 </div>
             </header>
         </div>
-
         {{-- End Header --}}
 
         <section class="main-body" id="laporan">
             {{-- Laporan --}}
             <div class="container">
-                <div class="sec-heading text-center py-3 text-uppercase">
+                <div class="sec-heading text-center mt-5">
                     <h3>laporan</h3>
                 </div>
-                <div class="row" style="z-index: 2">
+                <div class="row">
                     <div class="col-lg-3 col mb-3">
                         <a href="#" class="btn-report text-decoration-none">
                             <div class="text-black-50">Donasi Terhimpun</div>
@@ -83,8 +81,8 @@
             {{-- End Laporan --}}
 
             {{-- About --}}
-            <div class="container m-auto col-10 text-center">
-                <div class="sec-heading py-3 text-uppercase">
+            <div class="container col-10 text-center">
+                <div class="sec-heading mt-5">
                     <h3>Gerakan Infaq Nutrisi</h3>
                 </div>
                 <div class="body-content lh-base px-3">
@@ -116,14 +114,14 @@
                     </p>
                 </div>
 
-                <a href="/berdonasi" class="btn btn-donasi d-grid col col-md-4 mt-5 mx-auto">Donasi Sekarang</a>
+                <a href="/page-program" class="btn btn-donasi d-grid col col-md-4 mt-5 mx-auto">Donasi Sekarang</a>
 
             </div>
             {{-- End About --}}
 
             {{-- Start Programs Slider --}}
-            <div class="container py-5 ">
-                <div class="sec-heading text-uppercase text-center py-3">
+            <div class="container mt-5 ">
+                <div class="sec-heading text-center mt-5">
                     <h3>Program Pilihan</h3>
                 </div>
                 <div class="row gap-3">
@@ -145,7 +143,7 @@
                                 $persen_terkumpul = round($persen_terkumpul, 2);
                             @endphp
                             <div class="col">
-                                <div class="card ms-auto  bg-white" style="max-width: 300px;">
+                                <div class="card ms-auto  bg-white" style="width: 25rem;">
                                     <a href="{{ url($newlink) }}" class="text-decoration-none text-reset">
                                         <img src="{{ $program->photo }}" class="card-img-top" alt="...">
                                         <div class="card-body overflow-hidden">
@@ -180,7 +178,7 @@
                 <div class="container my-5">
                     <div class="row">
                         <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
-                            <div class="sec-heading text-uppercase text-center py-3">
+                            <div class="sec-heading text-center mt-5">
                                 <h3>Tokoh Pendukung</h3>
                             </div>
                         </div>
@@ -248,7 +246,7 @@
                 <div class="container my-5">
                     <div class="row">
                         <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
-                            <div class="sec-heading text-uppercase py-3 text-center">
+                            <div class="sec-heading mt-5 text-center">
                                 <h3>Penerima Manfaat</h3>
                             </div>
                         </div>
