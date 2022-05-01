@@ -1,596 +1,598 @@
-html {
-    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 14px;
-    padding: 0;
-    margin: 0;
-}
-
-.form-payment {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 5px 5px 0px 0px;
-}
-
-.border-form-payment {
-    border: solid;
-    border-color: #9141CC;
-}
-
-.container-fluid {
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
-}
-
-
-/* Scrolll Horizontal */
-
-.slides {
-    overflow: auto;
-    white-space: nowrap;
-}
-
-
-/* End Scroll Horizontal */
-
-.btn-facebook {
-    font-weight: 700;
-    background-color: #1976D2;
-    color: white;
-    padding: 0.5rem 1rem;
-}
-
-.btn-whatsapp {
-    font-weight: 700;
-    background-color: #67D449;
-    color: white;
-    padding: 0.5rem 1rem;
-}
-
-.btn-sosmed {
-    font-weight: 700;
-    background-color: #ECD5FD;
-    color: #B551FF;
-    padding: 0.5rem 1rem;
-}
-
-.btn-donasi {
-    color: aliceblue;
-    padding: 10px 15px;
-    font-weight: 700;
-    background-color: blueviolet;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.btn-donasi:hover {
-    color: blueviolet;
-    background-color: #ECD5FD;
-}
-
-.btn-copy {
-    color: #9141CC;
-}
-
-.btn-copy:hover {
-    animation: pulse 1s;
-    box-shadow: 0 0 0 2em rgba(rgb(12, 12, 12), 0);
-}
-
-
-/* START REPORT CONTENT */
-
-.btn-report {
-    display: grid;
-    align-items: center;
-    color: aliceblue;
-    text-decoration: none;
-    padding: 1em 1em;
-    background: #ECD5FD;
-    border: 1px solid #9141CC;
-    box-sizing: border-box;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    font-size: 14px;
-    min-width: 220px;
-}
-
-.btn-report .item1 {
-    /* grid-column-start: 1;
+    html {
+        font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 14px;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .form-payment {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px 5px 0px 0px;
+    }
+    
+    .border-form-payment {
+        border: solid;
+        border-color: #9141CC;
+    }
+    
+    .container-fluid {
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+    }
+    /* Scrolll Horizontal */
+    
+    .slides {
+        overflow: auto;
+        white-space: normal;
+    }
+    /* End Scroll Horizontal */
+    
+    .btn-facebook {
+        font-weight: 700;
+        background-color: #1976D2;
+        color: white;
+        padding: 0.5rem 1rem;
+    }
+    
+    .btn-whatsapp {
+        font-weight: 700;
+        background-color: #67D449;
+        color: white;
+        padding: 0.5rem 1rem;
+    }
+    
+    .btn-sosmed {
+        font-weight: 700;
+        background-color: #ECD5FD;
+        color: #B551FF;
+        padding: 0.5rem 1rem;
+    }
+    
+    .btn-donasi {
+        color: aliceblue;
+        padding: 10px 15px;
+        font-weight: 700;
+        background-color: blueviolet;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+    
+    .btn-donasi:hover {
+        color: blueviolet;
+        background-color: #ECD5FD;
+    }
+    
+    .btn-copy {
+        color: #9141CC;
+    }
+    
+    .btn-copy:hover {
+        animation: pulse 1s;
+        box-shadow: 0 0 0 2em rgba(rgb(12, 12, 12), 0);
+    }
+    /* START REPORT CONTENT */
+    
+    .btn-report {
+        display: grid;
+        align-items: center;
+        color: aliceblue;
+        text-decoration: none;
+        padding: 1em 1em;
+        background: #ECD5FD;
+        border: 1px solid #9141CC;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        font-size: 14px;
+        min-width: 220px;
+    }
+    
+    .btn-report .item1 {
+        /* grid-column-start: 1;
     grid-column-end: 4;
     top: 36px; */
-    color: #797779;
-    font-size: 1em;
-    font-weight: 400;
-}
-
-.btn-report .item2 {
-    color: #3F3B3E;
-    font-weight: 400;
-    font-size: 18px;
-}
-
-.btn-report .item3 {
-    color: #3F3B3E;
-    font-weight: 700;
-    font-size: 1.5em;
-    width: 150px;
-}
-
-.btn-report .item4 {
-    width: 30px;
-    height: 30px;
-    right: 6px;
-    top: 48px;
-}
-
-
-/* END REPORT CONTENT */
-
-.header {
-    min-height: 100vh;
-    /* width: 100vmax; */
-    background-color: white;
-}
-
-.laporan {
-    height: max-content;
-    padding: 50px 0;
-    background: #CC59AA;
-    box-shadow: inset -300px 0px 250px #AF2F89;
-}
-
-.page-programs {
-    margin-top: 70px;
-    min-height: 100vh;
-}
-
-.page-dokumentasi {
-    margin-top: 70px;
-    min-height: 100vh;
-    background: #CC59AA;
-    box-shadow: inset -300px 0px 250px #AF2F89;
-}
-
-.about {
-    height: max-content;
-    background: #CC59AA;
-    box-shadow: inset -300px 0px 250px #AF2F89;
-}
-
-.about h3 {
-    color: #ECD5FD;
-    font-size: 36px;
-}
-
-.body-content p {
-    color: #ECD5FD;
-    font-size: 18px;
-}
-
-.programs {
-    height: max-content;
-    background: #CC59AA;
-    box-shadow: inset -300px 0px 250px #AF2F89;
-    overflow: hidden;
-}
-
-.tokoh-pendukung {
-    height: 100vh;
-    padding: 3rem 3rem;
-    background: #CC59AA;
-    box-shadow: inset -300px 0px 250px #AF2F89;
-}
-
-.penerima-manfaat {
-    height: 100vh;
-    padding: 3rem 3rem;
-    background: #CC59AA;
-    box-shadow: inset -300px 0px 250px #AF2F89;
-}
-
-footer {
-    max-height: max-content;
-    background-color: white;
-}
-
-.card-footer {
-    background: #B551FF;
-    box-shadow: inset 20px 20px 40px rgba(0, 0, 0, 0.25), inset -20px -20px 40px rgba(0, 0, 0, 0.25);
-    height: 300px;
-    color: #FFFFFF;
-    border-radius: 50px;
-    font-size: 2rem;
-    position: relative;
-}
-
-.card-footer h3 {
-    font-weight: 500;
-    font-size: 0.5em;
-}
-
-.card-footer p {
-    font-weight: 400;
-    font-size: 0.5em;
-}
-
-
-/* Form-donasi */
-
-.page-berdonasi {
-    background-color: #CC59AA;
-    box-shadow: inset -300px 0px 250px rgba(175, 47, 137, 0.25);
-    min-height: 100vh;
-}
-
-.page-berdonasi .container {
-    max-width: 540px;
-    margin-top: 70px;
-}
-
-.form-nominal {
-    display: grid;
-    border-radius: 10px;
-    width: 500px;
-    height: 430px;
-    margin-top: 120px;
-    background-color: white;
-    padding: 22px 90px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    justify-content: center;
-}
-
-.form-header p {
-    color: rgba(121, 119, 121, 1);
-    font-size: 14px;
-    font-weight: 400;
-    margin-bottom: 0;
-}
-
-.form-header h3 {
-    font-size: 24px;
-    font-weight: 400;
-    color: rgba(2, 2, 2, 1);
-    margin-bottom: 0;
-}
-
-.form-nominal .pilihan-donasi {
-    display: flex;
-    width: 150px;
-    height: 50px;
-    background: #F9ACE2;
-    border: 1px solid #9141CC;
-    box-sizing: border-box;
-    border-radius: 10px;
-    justify-content: center;
-    align-items: center;
-    margin: 0 10px;
-}
-
-.pilihan-donasi a {
-    text-decoration: none;
-    color: rgba(63, 59, 62, 1);
-}
-
-.form-nominal .input-donasi {
-    border: 1px solid #9141CC;
-    box-sizing: border-box;
-    border-radius: 10px;
-    padding: 10px;
-    width: 320px;
-    height: 110px;
-}
-
-.input-donasi p {
-    font-size: 10px;
-    font-weight: 400;
-    color: #8D92A3;
-    ;
-}
-
-.input input {
-    width: 83%;
-    height: 41px;
-    background: #F3F2F2;
-    border-radius: 8px;
-    text-align: right;
-    padding: 10px;
-    border: none;
-}
-
-.input span {
-    border: none;
-    background: #F3F2F2;
-    border-radius: 8px;
-    font-size: 18px;
-    font-weight: 400;
-}
-
-.input label {
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.btn-nominal {
-    width: 100%;
-    background: #F9ACE2;
-    border: 1px solid #9141CC;
-    box-sizing: border-box;
-    border-radius: 10px;
-}
-
-.label-disable {
-    font-weight: normal;
-    font-size: 12px;
-    color: #8D92A3;
-}
-
-
-/* Berdonasi Page End */
-
-
-/* Page Pembayaran */
-
-.page-pembayaran {
-    background-color: #CC59AA;
-    box-shadow: inset -300px 0px 250px rgba(175, 47, 137, 0.25);
-    min-height: 100vh;
-}
-
-.page-pembayaran .container {
-    max-width: 540px;
-    margin-top: 70px;
-}
-
-.pembayaran p {
-    color: #797779;
-    font-weight: 400;
-    font-size: 1rem;
-}
-
-.pembayaran h3 {
-    color: #3F3B3E;
-    font-weight: 500;
-    font-size: 2rem;
-}
-
-
-/* end pembayaran */
-
-
-/* Tokoh Pendukung dan Testimoni Penerima Manfaat */
-
-.sec-heading h3 {
-    font-family: 'Kanit', sans-serif;
-    font-size: 3rem;
-    color: #ECD5FD;
-    font-weight: 400;
-}
-
-.single-box {
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    overflow: hidden;
-    background-color: #fff
-}
-
-.info-area {
-    padding: 0 20px 45px;
-}
-
-.img-area {
-    overflow: hidden;
-    padding: 15px 0 15px;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-
-.img-area img {
-    max-width: 150px;
-    max-height: 150px;
-    border-radius: 100%;
-    margin: 0 auto;
-}
-
-.single-box:hover img {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
-.info-area i {
-    display: inline-block;
-    color: rgb(196, 15, 254);
-    color: linear-gradient(90deg, rgba(196, 15, 254, 1) 0%, rgba(249, 47, 250, 1) 35%, rgba(220, 28, 250, 1) 100%);
-    margin: 0 4px;
-}
-
-.info-area h4 {
-    font-weight: 600
-}
-
-.info-area h5 {
-    color: #3b04db;
-    margin: 10px 0 0;
-    font-weight: 600
-}
-
-.info-area a {
-    display: inline-block;
-    margin: 25px 0 0;
-    color: #9141CC;
-    text-decoration: none;
-}
-
-.team-slider .owl-dots {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -60px;
-    text-align: center;
-    width: 100%;
-}
-
-.team-slider button.owl-dot {
-    width: 16px;
-    height: 16px;
-    display: inline-block;
-    margin: 0 6px;
-    text-align: center;
-    border-radius: 50%;
-    background-color: #ac468d;
-}
-
-.team-slider .owl-dot.active {
-    background-color: #F9ACE2;
-}
-
-.move-animation {
-    position: relative;
-    -webkit-animation: move-animation 2s ease-in-out infinite;
-    animation: move-animation 2s ease-in-out infinite;
-}
-
-@keyframes move-animation {
-    0% {
-        top: 3px;
+        color: #797779;
+        font-size: 1em;
+        font-weight: 400;
     }
-    50% {
-        top: -3px;
+    
+    .btn-report .item2 {
+        color: #3F3B3E;
+        font-weight: 400;
+        font-size: 18px;
     }
-    100% {
-        top: 3px;
+    
+    .btn-report .item3 {
+        color: #3F3B3E;
+        font-weight: 700;
+        font-size: 1.5em;
+        width: 150px;
     }
-}
-
-
-/* End tokoh Pendukung dan Testimoni Penerima Manfaat */
-
-
-/* WhatsApp CSS */
-
-.btn-whatsApp {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 40px;
-    right: 40px;
-    background-color: #25d366;
-    color: #FFF;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 2px 2px 3px #999;
-    z-index: 100;
-}
-
-
-/* End */
-
-
-/* Box-Shadow */
-
-.gallery img {
-    border: solid #fffeff;
-    border-radius: 20px;
-}
-
-
-/* End Box-Shadow */
-
-
-/* Avatar */
-
-.avatar {
-    vertical-align: middle;
-    width: 50px;
-    height: 50px;
-}
-
-
-/* End Avatar */
-
-
-/* Progress Report */
-
-.report-item {
-    position: relative;
-    border-left: 1px solid rgb(196, 15, 254);
-    padding: 2rem;
-    margin-left: 50px;
-    background-color: white;
-}
-
-.report-icon::before {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border: 1px solid rgb(230, 178, 247);
-    display: inline-block;
-    background-color: rgb(196, 15, 254);
-    left: -11px;
-    box-shadow: 1px 2px 5px 1px rgb(0 0 0 / 30%)
-}
-
-.report-title {
-    border: solid 1px;
-    border-radius: 2px;
-    background-color: rgb(230, 178, 247);
-    padding: 1rem;
-    width: 90%;
-}
-
-.report-item a {
-    color: #B551FF;
-    text-decoration: none;
-}
-
-
-/* end Progress Report */
-
-
-/* Landing Berita */
-
-.landing-berita {
-    margin-top: 70px;
-    min-height: 100vh;
-}
-
-
-/* End Landing Berita */
-
-
-/* Nominal Color */
-
-.nominal-color {
-    color: #AF2F89;
-}
-
-
-/* end Nominal Color */
-
-
-/* Media Query */
-
-.hero {
-    /* display: none */
-    width: 50vw;
-    display: none;
-}
-
-.screen-yt {
-    width: 5em;
-}
-
-.screen-ig {
-    width: 5em;
-}
-
-@media (min-width: 576px) {
+    
+    .btn-report .item4 {
+        width: 30px;
+        height: 30px;
+        right: 6px;
+        top: 48px;
+    }
+    /* END REPORT CONTENT */
+    
+    .header {
+        min-height: 50vh;
+        background-color: white;
+    }
+    
+    .main-body {
+        position: relative;
+        height: max-content;
+        padding: 50px 0;
+        background: #CC59AA;
+        box-shadow: inset -300px 0px 250px #AF2F89;
+    }
+    
+    .page-programs {
+        margin-top: 70px;
+        min-height: 100vh;
+    }
+    
+    .page-campaign {
+        padding-top: 75px;
+        padding-bottom: 5px;
+        min-height: 50vh;
+        max-width: 576px;
+    }
+    
+    .carousel-banner {
+        background-color: white;
+        box-shadow: 0px -4px 40px -15px rgba(0, 0, 0, 0.1);
+        padding: 10px 10px;
+    }
+    
+    .carousel-program {
+        background-color: white;
+        box-shadow: 0px -4px 40px -15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .page-dokumentasi {
+        margin-top: 70px;
+        min-height: 100vh;
+        background: #CC59AA;
+        box-shadow: inset -300px 0px 250px #AF2F89;
+    }
+    
+    .about {
+        height: max-content;
+        background: #CC59AA;
+        box-shadow: inset -300px 0px 250px #AF2F89;
+    }
+    
+    .about h3 {
+        color: #ECD5FD;
+        font-size: 36px;
+    }
+    
+    .body-content p {
+        color: #ECD5FD;
+        font-size: 18px;
+    }
+    
+    .programs {
+        height: max-content;
+        background: #CC59AA;
+        box-shadow: inset -300px 0px 250px #AF2F89;
+        overflow: hidden;
+    }
+    
+    .tokoh-pendukung {
+        height: 100vh;
+        padding: 3rem 3rem;
+        background: #CC59AA;
+        box-shadow: inset -300px 0px 250px #AF2F89;
+    }
+    
+    .penerima-manfaat {
+        height: 100vh;
+        padding: 3rem 3rem;
+        background: #CC59AA;
+        box-shadow: inset -300px 0px 250px #AF2F89;
+    }
+    
+    footer {
+        max-height: max-content;
+        background-color: white;
+    }
+    
+    .card-footer {
+        background: #B551FF;
+        box-shadow: inset 20px 20px 40px rgba(0, 0, 0, 0.25), inset -20px -20px 40px rgba(0, 0, 0, 0.25);
+        height: 300px;
+        color: #FFFFFF;
+        border-radius: 50px;
+        font-size: 2rem;
+        position: relative;
+    }
+    
+    .card-footer h3 {
+        font-weight: 500;
+        font-size: 0.5em;
+    }
+    
+    .card-footer p {
+        font-weight: 400;
+        font-size: 0.5em;
+    }
+    /* Form-donasi */
+    
+    .page-berdonasi {
+        background-color: #CC59AA;
+        box-shadow: inset -300px 0px 250px rgba(175, 47, 137, 0.25);
+        min-height: 100vh;
+    }
+    
+    .page-berdonasi .container {
+        max-width: 540px;
+        margin-top: 70px;
+    }
+    
+    .form-nominal {
+        display: grid;
+        border-radius: 10px;
+        width: 500px;
+        height: 430px;
+        margin-top: 120px;
+        background-color: white;
+        padding: 22px 90px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        justify-content: center;
+    }
+    
+    .form-header p {
+        color: rgba(121, 119, 121, 1);
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 0;
+    }
+    
+    .form-header h3 {
+        font-size: 24px;
+        font-weight: 400;
+        color: rgba(2, 2, 2, 1);
+        margin-bottom: 0;
+    }
+    
+    .form-nominal .pilihan-donasi {
+        display: flex;
+        width: 150px;
+        height: 50px;
+        background: #F9ACE2;
+        border: 1px solid #9141CC;
+        box-sizing: border-box;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 10px;
+    }
+    
+    .pilihan-donasi a {
+        text-decoration: none;
+        color: rgba(63, 59, 62, 1);
+    }
+    
+    .form-nominal .input-donasi {
+        border: 1px solid #9141CC;
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding: 10px;
+        width: 320px;
+        height: 110px;
+    }
+    
+    .input-donasi p {
+        font-size: 10px;
+        font-weight: 400;
+        color: #8D92A3;
+        ;
+    }
+    
+    .input input {
+        width: 83%;
+        height: 41px;
+        background: #F3F2F2;
+        border-radius: 8px;
+        text-align: right;
+        padding: 10px;
+        border: none;
+    }
+    
+    .input span {
+        border: none;
+        background: #F3F2F2;
+        border-radius: 8px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    
+    .input label {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .btn-nominal {
+        width: 100%;
+        background: #F9ACE2;
+        border: 1px solid #9141CC;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+    
+    .label-disable {
+        font-weight: normal;
+        font-size: 12px;
+        color: #8D92A3;
+    }
+    /* Berdonasi Page End */
+    /* Page Pembayaran */
+    
+    .page-pembayaran {
+        background-color: #CC59AA;
+        box-shadow: inset -300px 0px 250px rgba(175, 47, 137, 0.25);
+        min-height: 100vh;
+    }
+    
+    .page-pembayaran .container {
+        max-width: 540px;
+        margin-top: 70px;
+    }
+    
+    .pembayaran p {
+        color: #797779;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+    
+    .pembayaran h3 {
+        color: #3F3B3E;
+        font-weight: 500;
+        font-size: 2rem;
+    }
+    /* end pembayaran */
+    /* Tokoh Pendukung dan Testimoni Penerima Manfaat */
+    
+    .sec-heading h3 {
+        font-family: 'Kanit', sans-serif;
+        font-size: 3rem;
+        color: #ECD5FD;
+        font-weight: 400;
+    }
+    
+    .single-box {
+        border: 1px solid #ddd;
+        border-radius: 20px;
+        overflow: hidden;
+        background-color: #fff
+    }
+    
+    .info-area {
+        padding: 0 20px 45px;
+    }
+    
+    .img-area {
+        overflow: hidden;
+        padding: 15px 0 15px;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+    
+    .img-area img {
+        max-width: 150px;
+        max-height: 150px;
+        border-radius: 100%;
+        margin: 0 auto;
+    }
+    
+    .single-box:hover img {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    
+    .info-area i {
+        display: inline-block;
+        color: rgb(196, 15, 254);
+        color: linear-gradient(90deg, rgba(196, 15, 254, 1) 0%, rgba(249, 47, 250, 1) 35%, rgba(220, 28, 250, 1) 100%);
+        margin: 0 4px;
+    }
+    
+    .info-area h4 {
+        font-weight: 600
+    }
+    
+    .info-area h5 {
+        color: #3b04db;
+        margin: 10px 0 0;
+        font-weight: 600
+    }
+    
+    .info-area a {
+        display: inline-block;
+        margin: 25px 0 0;
+        color: #9141CC;
+        text-decoration: none;
+    }
+    
+    .team-slider .owl-dots {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -60px;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .team-slider button.owl-dot {
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        margin: 0 6px;
+        text-align: center;
+        border-radius: 50%;
+        background-color: #ac468d;
+    }
+    
+    .team-slider .owl-dot.active {
+        background-color: #F9ACE2;
+    }
+    
+    .move-animation {
+        position: relative;
+        -webkit-animation: move-animation 2s ease-in-out infinite;
+        animation: move-animation 2s ease-in-out infinite;
+    }
+    
+    @keyframes move-animation {
+        0% {
+            top: 3px;
+        }
+        50% {
+            top: -3px;
+        }
+        100% {
+            top: 3px;
+        }
+    }
+    /* End tokoh Pendukung dan Testimoni Penerima Manfaat */
+    /* WhatsApp CSS */
+    
+    .btn-whatsApp {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+    }
+    /* End */
+    /* Box-Shadow */
+    
+    .gallery img {
+        border: solid #fffeff;
+        border-radius: 20px;
+    }
+    /* End Box-Shadow */
+    /* Avatar */
+    
+    .avatar {
+        vertical-align: middle;
+        width: 50px;
+        height: 50px;
+    }
+    /* End Avatar */
+    /* Progress Report */
+    
+    .progress-bar {
+        background-color: #FF6FD4;
+    }
+    
+    .report-item {
+        position: relative;
+        border-left: 1px solid rgb(196, 15, 254);
+        padding: 2rem;
+        margin-left: 50px;
+        background-color: white;
+    }
+    
+    .report-icon::before {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid rgb(230, 178, 247);
+        display: inline-block;
+        background-color: rgb(196, 15, 254);
+        left: -11px;
+        box-shadow: 1px 2px 5px 1px rgb(0 0 0 / 30%)
+    }
+    
+    .report-title {
+        border: solid 1px;
+        border-radius: 2px;
+        background-color: rgb(230, 178, 247);
+        padding: 1rem;
+        width: 90%;
+    }
+    
+    .report-item a {
+        color: #B551FF;
+        text-decoration: none;
+    }
+    /* end Progress Report */
+    /* Landing Berita */
+    
+    .landing-berita {
+        margin-top: 70px;
+        min-height: 100vh;
+    }
+    /* End Landing Berita */
+    /* Nominal Color */
+    
+    .nominal-color {
+        color: #AF2F89;
+    }
+    /* end Nominal Color */
+    /* Media Query */
+    
+    .shape {
+        width: 500px;
+    }
+    
     .hero {
-        display: block;
+        /* display: none */
+        width: 50vw;
+        display: none;
     }
-    /* .screen-ig, */
+    
     .screen-yt {
+        width: 5em;
+    }
+    
+    .screen-ig {
+        width: 5em;
+    }
+    
+    .donatur {
         display: block;
     }
-}
+    
+    .donatur-side {
+        max-height: 500px;
+        display: none;
+        overflow: scroll;
+    }
+    
+    .social-media {
+        width: 500px;
+    }
+    
+    @media (min-width: 992px) {
+        .donatur-side {
+            display: block;
+        }
+        .donatur {
+            display: none;
+        }
+    }
+    
+    @media (min-width: 576px) {
+        .hero {
+            display: block;
+        }
+        .header {
+            min-height: 100vh;
+        }
+    }

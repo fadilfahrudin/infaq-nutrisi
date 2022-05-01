@@ -14,23 +14,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home', [
-        // "title" => "Home",
-        "image" => "logo-gin.png"
-    ]);
-});
+Route::get('/', 'HomeController@index');
 
 Route::get('/berdonasi', 'DonationController@create');
 Route::get('/pembayaran', function () {
     return view('pembayaran');
 });
+Route::get('/page-program', 'ProgramsController@pageProgram');
 Route::get('/dokumentasi', function() {
     return view('dokumentasi');
 });
-Route::get('/details-program', function(){
-    return view(('details-program'));
-});
+Route::get('/{link?}', 'HomeController@detailsProgram');
 Route::get('/landing-berita', function(){
     return view(('landingberita'));
 });

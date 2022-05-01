@@ -64,15 +64,9 @@
                         <p class="text-center">A.n Semangat Bantu</p>
                         <hr style="background: #9141CC">
 
-                        <div class="d-flex justify-content-between">
-                            <div class="m-auto p-2"><a type="button" class="btn btn-sosmed " href="#">Saya
-                                    sudah
-                                    transfer</a>
-                            </div>
-                            <div class="m-auto p-2"><a class="btn btn-sosmed" type="button" href="#">Donatur Program</a>
-                            </div>
+                        <div class="d-grid my-3">
+                            <a type="button" class="btn btn-sosmed " href="#">Saya sudah transfer</a>
                         </div>
-
                 </div>
 
                 <div class="form-payment py-3">
