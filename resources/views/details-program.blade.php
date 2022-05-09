@@ -58,18 +58,39 @@
                             </div>
                             <button type="button" data-bs-toggle="modal" data-bs-target="#share"
                                 class="btn btn-sosmed">Bagiakan <i class="fa-solid fa-share-nodes"></i></button>
-                            <div class="modal fade" id="share" tabindex="-1" aria-labelledby="share" aria-hidden="true">
-                                <div class="modal-dialog">
+                            <div class="modal fade" id="share" tabindex="-4" aria-labelledby="share" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
                                     <div class="modal-content">
                                         <div class="modal-header">
+                                            <h5 class="modal-title">Bagiakan tautan ke sosial media kamu..</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            <h1>hello</h1>
-                                            <a
-                                                href="https://api.whatsapp.com/send?text=saya mengajak anda untuk berdonasi di program {{ url()->current() }}"><img
-                                                    src="img/wa.svg" alt="WhatsApp" width="50px"></a>
+                                            <ul class="d-flex justify-content-center gap-5 m-3">
+                                                <a class="text-decoration-none text-muted text-center d-block"
+                                                    href="https://api.whatsapp.com/send?text=saya mengajak anda untuk berdonasi di program {{ url()->current() }}"
+                                                    target="_blank"><img src="img/whatsapp.svg" width="50px" alt="">
+                                                    <small class="d-block fw-bold">WhatsApp</small></a>
+                                                <a class="text-decoration-none text-muted text-center d-block"
+                                                    href="https://www.facebook.com/sharer/sharer.php?u={{ url()->current() }}"
+                                                    target="_blank"><img src="img/facebook.svg" width="50px" alt="">
+                                                    <small class="d-block fw-bold">Facebook</small></a>
+                                                <a class="text-decoration-none text-muted text-center d-block"
+                                                    href="https://t.me/share/url?url={{ url()->current() }}&text={{ $program->name }}"
+                                                    target="_blank"><img src="img/telegram.svg" width="50px" alt="">
+                                                    <small class="d-block fw-bold">Telegram</small></a>
+
+                                            </ul>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" value="{{ url()->current() }}"
+                                                    id="copyText">
+                                                <button class="btn btn-outline-secondary" id="copyBtn">salin</button>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary col mx-auto"
+                                                data-bs-dismiss="modal">Kembali</button>
                                         </div>
                                     </div>
                                 </div>
@@ -189,3 +210,20 @@
         </div>
     </section>
 @endsection
+@push('bodyscript')
+    <script>
+        const copyBtn = document.getElementById("copyBtn");
+        const copyText = document.getElementById("copyText");
+
+        copyBtn.onclick = () => {
+            copyText.select();
+            document.execCommand('copy');
+            // alert("Link berhasil disalin")
+            Swal.fire({
+                icon: 'success',
+                title: 'Link berhasil disalin',
+                timer: 1000
+            });
+        }
+    </script>
+@endpush

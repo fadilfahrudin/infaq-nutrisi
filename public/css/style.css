@@ -579,6 +579,10 @@
         width: 500px;
     }
     
+    .modal-body img:hover {
+        width: 52px;
+    }
+    
     @media (min-width: 992px) {
         .donatur-side {
             display: block;
