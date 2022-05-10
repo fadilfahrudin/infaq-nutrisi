@@ -36,9 +36,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
+    {{-- POP UP sweetalert via CDN --}}
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     {{-- Kit Fontawsome --}}
     <script src="https://kit.fontawesome.com/71cb179753.js" crossorigin="anonymous"></script>
-    <script src="/js/script.js"></script>
+    <script src="{{ asset('js/script.js') }}"></script>
+    @yield('js')
 </body>
 
 </html>
