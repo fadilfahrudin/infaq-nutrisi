@@ -67,21 +67,28 @@
                                                 aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            <ul class="d-flex justify-content-center gap-5 m-3">
-                                                <a class="text-decoration-none text-muted text-center d-block"
-                                                    href="https://api.whatsapp.com/send?text=saya mengajak anda untuk berdonasi di program {{ url()->current() }}"
-                                                    target="_blank"><img src="img/whatsapp.svg" width="50px" alt="">
-                                                    <small class="d-block fw-bold">WhatsApp</small></a>
-                                                <a class="text-decoration-none text-muted text-center d-block"
-                                                    href="https://www.facebook.com/sharer/sharer.php?u={{ url()->current() }}"
-                                                    target="_blank"><img src="img/facebook.svg" width="50px" alt="">
-                                                    <small class="d-block fw-bold">Facebook</small></a>
-                                                <a class="text-decoration-none text-muted text-center d-block"
-                                                    href="https://t.me/share/url?url={{ url()->current() }}&text={{ $program->name }}"
-                                                    target="_blank"><img src="img/telegram.svg" width="50px" alt="">
-                                                    <small class="d-block fw-bold">Telegram</small></a>
-
-                                            </ul>
+                                            <div class="shareSosmed">
+                                                <ul>
+                                                    <li>
+                                                        <a class="text-decoration-none text-muted text-center d-block"
+                                                            href="https://api.whatsapp.com/send?text=saya mengajak anda untuk berdonasi di program {{ url()->current() }}"
+                                                            target="_blank"><img src="img/whatsapp.svg" alt="">
+                                                            <small class="fw-bold">WhatsApp</small></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="text-decoration-none text-muted text-center d-block"
+                                                            href="https://www.facebook.com/sharer/sharer.php?u={{ url()->current() }}"
+                                                            target="_blank"><img src="img/facebook.svg" alt="">
+                                                            <small class="fw-bold">Facebook</small></a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="text-decoration-none text-muted text-center d-block"
+                                                            href="https://t.me/share/url?url={{ url()->current() }}&text={{ $program->name }}"
+                                                            target="_blank"><img src="img/telegram.svg" alt="">
+                                                            <small class="fw-bold">Telegram</small></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                             <div class="input-group mb-3">
                                                 <input type="text" class="form-control" value="{{ url()->current() }}"
                                                     id="copyText">
@@ -181,8 +188,8 @@
                     </div>
                 </div>
                 <div class="col-lg">
-                    <div class="card p-3">
-                        <div class="donatur-side">
+                    <div class="donatur-side">
+                        <div class="card p-3">
                             <h5>Donatur</h5>
                             <hr>
                             <div class="d-flex gap-3">
@@ -198,19 +205,14 @@
                             </div>
                             <hr>
                         </div>
-
                     </div>
                 </div>
             </div>
             {{-- End Deskripsi Program --}}
         </div>
-        <div class="my-3 d-flex">
-            <a href="/berdonasi" class="btn btn-donasi col-lg-4 mx-auto">Donasi Sekarang</a>
-        </div>
-        </div>
     </section>
 @endsection
-@push('bodyscript')
+@section('js')
     <script>
         const copyBtn = document.getElementById("copyBtn");
         const copyText = document.getElementById("copyText");
@@ -226,4 +228,4 @@
             });
         }
     </script>
-@endpush
+@endsection

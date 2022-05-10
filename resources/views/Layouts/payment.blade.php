@@ -42,7 +42,6 @@
     <script src="https://kit.fontawesome.com/71cb179753.js" crossorigin="anonymous"></script>
     <script src="{{ asset('js/script.js') }}"></script>
     @yield('js')
-    @stack('bodyscript')
 </body>
 
 </html>

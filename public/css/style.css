@@ -579,8 +579,37 @@
         width: 500px;
     }
     
-    .modal-body img:hover {
-        width: 52px;
+    .shareSosmed ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+        flex-wrap: wrap;
+        padding: 10px 20px 20px;
+    }
+    
+    .shareSosmed ul li {
+        width: 25%;
+        text-align: center;
+    }
+    
+    .shareSosmed a img {
+        max-width: 80px;
+        height: 80px;
+        padding: 10px;
+    }
+    
+    .shareSosmed img:hover {
+        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+    
+    @keyframes slide-top {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(-10px);
+        }
     }
     
     @media (min-width: 992px) {
