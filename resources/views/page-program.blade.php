@@ -54,7 +54,7 @@
                             $selisih = round($datediff / (60 * 60 * 24));
                             $sisa_hari = $selisih . ' hari';
                         }
-                        $newlink = !empty($program->seo_link) ? $program->seo_link : '/p' . $programs->link;
+                        $newlink = !empty($program->seo_link) ? $program->seo_link : '/p' . $program->link;
                         $terkumpul = !empty($program->additional_collected) ? $program->collected + $program->additional_collected : $program->collected;
                         $persen_terkumpul = !empty($program->target_amount) && $program->target_amount > 0 ? ($terkumpul / $program->target_amount) * 100 : 0;
                         $persen_terkumpul = round($persen_terkumpul, 2);
