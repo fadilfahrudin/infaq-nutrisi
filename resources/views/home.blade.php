@@ -11,7 +11,7 @@
                         <img src="img/logo-name.png" class="w-100" alt="">
                         <h3 class="text-center mb-5">Semua bisa bergerak, Semua bisa <br> berinfaq, Semua mampu bantu sesama
                         </h3>
-                        <a href="/page-program" class="btn btn-donasi d-grid col-6 mx-auto">Donasi Sekarang</a>
+                        <a href="/program" class="btn btn-donasi d-grid col-6 mx-auto">Donasi Sekarang</a>
                     </div>
                     <div class="col-lg-6">
                         <img src="img/hero.png" class="hero w-100" alt="Gerakan Infaq nutrisi">
@@ -114,7 +114,7 @@
                     </p>
                 </div>
 
-                <a href="/page-program" class="btn btn-donasi d-grid col col-md-4 mt-5 mx-auto">Donasi Sekarang</a>
+                <a href="/program" class="btn btn-donasi d-grid col col-md-4 mt-5 mx-auto">Donasi Sekarang</a>
 
             </div>
             {{-- End About --}}

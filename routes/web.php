@@ -20,11 +20,13 @@ Route::get('/berdonasi', 'DonationController@create');
 Route::get('/pembayaran', function(){
     return view('pembayaran');
 });
-Route::get('/page-program', 'ProgramsController@pageProgram');
+Route::get('/program', 'ProgramController@index');
 Route::get('/dokumentasi', function() {
     return view('dokumentasi');
 });
-Route::get('/{link?}', 'HomeController@detailsProgram');
 Route::get('/landing-berita', function(){
     return view(('landingberita'));
 });
+// Route::get('/{link?}', 'HomeController@detailsProgram');
+Route::get('/{link?}', 'ProgramController@detail')->name('program.detail');
+Route::get('/{link?}/berdonasi', 'DonationController@create');

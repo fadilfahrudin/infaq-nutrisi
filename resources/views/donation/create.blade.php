@@ -1,7 +1,5 @@
-@extends('layouts.payment')
-@section('title')
-    Berdonasi
-@endsection
+@extends('templates.simple.layout')
+@section('title'){{ $program->name }}@endsection
 @section('content')
     <section class="page-berdonasi">
 
@@ -10,7 +8,7 @@
 
                 <header class="form-header mb-3">
                     <p>Anda akan berdonasi untuk :</p>
-                    <h3 class="card-titel">Gerakan Infaq Nutrisi</h3>
+                    <h3 class="card-title">{{ $program->name }}</h3>
                     <hr style="margin-top: 6px; background: #9141CC">
                 </header>
 
