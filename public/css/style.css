@@ -629,3 +629,24 @@
             min-height: 100vh;
         }
     }
+}
+
+.mt-6 {
+    margin-top: 3.5rem !important;
+}
+.mt-7 {
+    margin-top: 4rem !important;
+}
+.mt-8 {
+    margin-top: 4.5rem !important;
+}
+
+.bg-gin1 {
+    background-color: #fc6cd4;
+}
+.bg-gin2 {
+    background-color: #bf58f7;
+}
+.bg-gin3 {
+    background-color: #CC59AA;
+}
