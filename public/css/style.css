@@ -680,3 +680,7 @@
 .bg-gin3 {
     background-color: #CC59AA;
 }
+
+.mobile-container {
+    width: 576px !important;
+}
