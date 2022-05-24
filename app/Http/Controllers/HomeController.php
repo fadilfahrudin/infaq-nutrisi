@@ -16,7 +16,11 @@ class HomeController extends Controller
     public function index(){
         $collected = Donasi::where('status', 'done')->sum('amount_final');
         $disalurkan = News::sum('total_distributed');
-        $programs = Program::all();
+        $programs = Program::where([
+            ['verified', 1],
+            ['published', 1],
+            ['closed', 0]
+        ])->get();
         return view('home', compact('collected','disalurkan', 'programs'));
     }
 
