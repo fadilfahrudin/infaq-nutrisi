@@ -16,8 +16,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController@index');
 
-Route::get('/program', 'ProgramController@index');
-Route::get('/pembayaran', function () {
+Route::get('/berdonasi', 'DonationController@create');
+Route::get('/pembayaran', function(){
     return view('pembayaran');
 });
 Route::get('/program', 'ProgramController@index');

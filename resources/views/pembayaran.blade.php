@@ -19,7 +19,7 @@
                     <div class="p-2 border-form-payment rounded mx-4">
                         <div class="d-flex justify-content-between px-4">
                             <div class="nominalDonasi">
-                                <input type="hidden" value="{{ '300000' }}" id="jmlTxt">
+                                <input type="hidden" value="{{ '300000' }}" id="jmlNominal">
                                 <h4 class="fw-bold">Rp. {{ number_format('300000') }}</h4>
                             </div>
                             <div class="fw-normal text-uppercase">
@@ -50,38 +50,121 @@
                         <hr class="mt-3" style="background: #9141CC">
                         <div class="border-form-payment rounded mx-4 p-2">
                             <div class="d-flex justify-content-between px-4">
-                                <div class="imgChannel">
-                                    <img src="img/bsi-logo.svg" alt="">
-                                </div>
-                                <div class="nominalDonasi">
-                                    <h4 class="fw-bold" id="norek">7140782119</h4>
-                                </div>
-                                <div class="fw-normal text-uppercase">
-                                    <a class="btn btn-copy" onclick="copyToClipboard('#norek')">salin</a>
-                                </div>
+                                <img class="imgChannel" src="img/bsi-logo.svg" alt="">
+                                <h4 class="fw-bold nominalDonasi">7140782119</h4>
+                                <input type="hidden" value="7140782119" id="noRek">
+                                <a class="btn btn-copy fw-normal text-uppercase" onclick="copyNorek()">salin</a>
                             </div>
                         </div>
                         <p class="text-center">A.n Semangat Bantu</p>
                         <hr style="background: #9141CC">
-
-                        <div class="d-grid my-3">
-                            <a type="button" class="btn btn-sosmed " href="#">Saya sudah transfer</a>
+                        <p class="text-center">Upload bukti transaksimu disini</p>
+                        <div class="input-group mb-3">
+                            <input type="file" class="form-control" id="fileTransaksi">
+                            <button class="input-group-text" for="fileTransaksi">Upload</button>
                         </div>
                 </div>
 
                 <div class="form-payment py-3">
                     <p class="text-center">Bantu Gerakan infaq Nutrisi
                         mencapai targetnya</p>
-                    <div class="d-grid my-3 gap-2">
-                        <a class="btn btn-facebook" href="#"><i class="fa-brands fa-facebook"></i> Bagikan Via Facebook</a>
-                        <a class="btn btn-whatsapp" href="#"><i class="fa-brands fa-whatsapp"></i> Bagikan Via WhatsApp</a>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" value="link program" id="copyText">
+                        <button class="btn btn-sosmed btn-outline-secondary" id="copyBtn">salin</button>
+                        <button class=" btn btn-sosmed btn-outline-secondary" type="button" data-bs-toggle="modal"
+                            data-bs-target="#share"><i class="fa-solid fa-share-nodes"></i></button>
+                    </div>
+                    <div class="modal fade" id="share" tabindex="-4" aria-labelledby="share" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Bagiakan tautan ke sosial media kamu..</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="shareSosmed">
+                                        <ul>
+                                            <li>
+                                                <a class="text-decoration-none text-muted text-center d-block" href="#"
+                                                    target="_blank"><img src="img/whatsapp.svg" alt="">
+                                                    <small class="fw-bold">WhatsApp</small></a>
+                                            </li>
+                                            <li>
+                                                <a class="text-decoration-none text-muted text-center d-block" href="#"
+                                                    target="_blank"><img src="img/facebook.svg" alt="">
+                                                    <small class="fw-bold">Facebook</small></a>
+                                            </li>
+                                            <li>
+                                                <a class="text-decoration-none text-muted text-center d-block" href="#"
+                                                    target="_blank"><img src="img/telegram.svg" alt="">
+                                                    <small class="fw-bold">Telegram</small></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary col mx-auto"
+                                        data-bs-dismiss="modal">Kembali</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <button type="submit" class="btn btn-sosmed mt-3">Lihat Program Lainnya</button>
+                <a href="/page-program" class="btn btn-sosmed mt-3">Lihat Program Lainnya</a>
 
             </div>
         </div>
 
     </section>
+@endsection
+@section('js')
+    <script>
+        // copy link Program
+        const copyBtn = document.getElementById("copyBtn");
+        const copyText = document.getElementById("copyText");
+
+        copyBtn.onclick = () => {
+            copyText.select();
+            document.execCommand('copy');
+            Swal.fire({
+                icon: 'success',
+                title: 'Link berhasil disalin',
+                timer: 1000
+            });
+        }
+        // copy nomer rekening
+        function copyNorek() {
+            var str = document.getElementById('noRek').value;
+            const el = document.createElement('textarea');
+            el.value = str;
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+            Swal.fire({
+                icon: 'success',
+                title: 'No. Rekening berhasil disalin',
+                timer: 1000
+            });
+        }
+
+        // copy nominal donasi
+        function copyAmount() {
+            var str = document.getElementById('jmlNominal').value;
+            const el = document.createElement('textarea');
+            el.value = str;
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+            Swal.fire({
+                icon: 'success',
+                title: 'Nominal berhasil disalin',
+                timer: 1000
+            });
+        }
+    </script>
 @endsection

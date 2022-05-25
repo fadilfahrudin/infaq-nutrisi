@@ -127,7 +127,6 @@
                 <div class="row gap-3">
                     <div class="slides d-flex gap-5">
                         @foreach ($programs as $program)
-                            {{-- @if (!empty($c->placment) && strpos($c->placment, 'pilihan') !== false) --}}
                             @php
                                 $sisa_hari = '&infin;';
                                 if (!empty($program->expired_date)) {
